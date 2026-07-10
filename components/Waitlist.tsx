@@ -14,12 +14,10 @@ export default function Waitlist() {
         <form
           name="hevon-waitlist"
           method="POST"
-          data-netlify="true"
           data-netlify-honeypot="bot-field"
           action="/success"
           className="mx-auto mt-9 grid max-w-3xl gap-3 sm:grid-cols-[1fr_1fr_auto]"
         >
-          <input type="hidden" name="form-name" value="hevon-waitlist" />
           <p className="hidden"><label>Do not fill this out: <input name="bot-field" /></label></p>
           <label className="sr-only" htmlFor="waitlist-name">Name</label>
           <input id="waitlist-name" name="name" autoComplete="name" required placeholder="Your name" className="min-h-14 rounded-full border border-white/15 bg-white/6 px-5 text-white outline-none placeholder:text-white/35 focus:border-[#ff6a00]" />
