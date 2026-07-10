@@ -1,0 +1,15 @@
+HEVON Final Product Visual Update
+
+Completed:
+- Rebuilt the hero product bottle with a shaped PET silhouette, neck and cap.
+- Added realistic glass highlights, liquid depth, condensation droplets and label depth.
+- Added cream splash shapes and additional floating coffee beans around the hero bottle.
+- Upgraded flavour-card bottles to use the same dimensional product system.
+- Upgraded the dark Why HEVON bottle to the same dimensional product system.
+- Replaced hevonofficial@gmail.com with hello@hevon.in across metadata, footer, privacy, terms and documentation.
+- Verified with npm run lint and npm run build.
+
+Deployment:
+- Build command: npm run build
+- Netlify configuration is included in netlify.toml.
+- Waitlist submissions are configured for Netlify Forms.
