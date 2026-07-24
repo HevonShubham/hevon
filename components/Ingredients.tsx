@@ -10,7 +10,7 @@ const principles = [
   {
     icon: FlaskConical,
     title: "Protein that fits the drink",
-    copy: "The formulation target is 25g protein while protecting texture, stability and everyday drinkability.",
+    copy: "The formulation target is 18–20g protein while protecting texture, stability and everyday drinkability.",
   },
   {
     icon: WheatOff,

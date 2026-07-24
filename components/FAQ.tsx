@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const items = [
   ["What is HEVON?", "HEVON is a planned ready-to-drink high-protein beverage brand. Coffee Latte is the first product currently being explored for launch in India."],
-  ["How much protein will it contain?", "The current formulation target is 25g protein per 250ml bottle. Final values will be confirmed only after product development, stability testing and regulatory review."],
+  ["How much protein will it contain?", "The current formulation target is 18–20g protein per 250ml bottle. Final values will be confirmed only after product development, stability testing and regulatory review."],
   ["Will every flavour contain caffeine?", "No. Caffeine is intended only for coffee-based flavours. Future non-coffee concepts would remain protein drinks without added caffeine."],
   ["Is HEVON available to buy now?", "Not yet. HEVON is in the pre-launch product-development stage. Joining the waitlist is the best way to receive verified launch updates."],
   ["Are the future flavours confirmed?", "No. Coffee Latte is the planned launch flavour. Other flavours shown are concept directions and may change based on formulation feasibility and community feedback."],

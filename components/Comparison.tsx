@@ -1,7 +1,7 @@
 import { Check, Minus } from "lucide-react";
 
 const rows = [
-  ["Protein", "25g", "2–6g"],
+  ["Protein", "18–20g", "2–6g"],
   ["Added sugar", "0g", "15–30g"],
   ["Calories", "Target ≤150", "Often 180–300"],
   ["Ingredients", "Clean & transparent", "Often long or unclear"],

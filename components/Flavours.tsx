@@ -136,7 +136,7 @@ export default function Flavours() {
                 </motion.div>
 
                 <div className="pointer-events-none absolute inset-x-8 bottom-5 z-20 flex items-center justify-between">
-                  <span className="text-[11px] font-black uppercase tracking-[.16em] text-white drop-shadow-md">25g Protein</span>
+                  <span className="text-[11px] font-black uppercase tracking-[.16em] text-white drop-shadow-md">18–20g Protein</span>
                   <span className={`rounded-full px-3 py-2 text-[10px] font-black uppercase tracking-[.12em] text-white shadow-lg ${flavour.badge}`}>
                     {flavour.name}
                   </span>

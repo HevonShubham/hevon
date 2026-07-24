@@ -1,7 +1,7 @@
 import { Dumbbell, Leaf, ShieldCheck, Zap } from "lucide-react";
 
 const benefits = [
-  { icon: Dumbbell, title: "High Protein", text: "25g per bottle" },
+  { icon: Dumbbell, title: "High Protein", text: "18–20g per bottle" },
   { icon: ShieldCheck, title: "Zero Added Sugar", text: "No sugar. No compromise." },
   { icon: Leaf, title: "Real Ingredients", text: "Clean and transparent" },
   { icon: Zap, title: "Everyday Performance", text: "For work, training and life" },

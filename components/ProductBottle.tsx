@@ -85,7 +85,7 @@ export default function ProductBottle({
         {/* Label */}
         <div className="absolute inset-x-[13%] top-[22%] bottom-[10%] rounded-[22px] border border-black/10 bg-[#f7f2ec]/95 shadow-[0_14px_30px_rgba(0,0,0,.17)] backdrop-blur-[2px]">
           <div className="absolute inset-x-0 top-[7%] text-center text-[#111]">
-            <p className={clsx("font-black leading-none", compact ? "text-xl" : "text-3xl sm:text-4xl")}>25g</p>
+            <p className={clsx("font-black leading-none", compact ? "text-xl" : "text-3xl sm:text-4xl")}>18–20g</p>
             <p className={clsx("mt-1 font-black uppercase tracking-[.24em]", compact ? "text-[6px]" : "text-[8px]")}>Protein</p>
           </div>
 

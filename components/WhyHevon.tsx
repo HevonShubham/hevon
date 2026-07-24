@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Check, Coffee, Droplets, Sparkles, Zap } from "lucide-react";
 
 const points = [
-  "25g high-quality protein",
+  "18–20g high-quality protein",
   "Zero added sugar",
   "Real ingredients",
   "Designed for everyday routines",
