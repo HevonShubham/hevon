@@ -1,8 +1,7 @@
 "use client";
 
-import { Check, LoaderCircle, Sparkles } from "lucide-react";
-import { FormEvent, useState } from "react";
-import { useRouter } from "next/navigation";
+import { Check, Sparkles } from "lucide-react";
+import { useState } from "react";
 
 const options = [
   {
@@ -32,60 +31,8 @@ const options = [
   },
 ];
 
-type FormStatus = "idle" | "submitting" | "error";
-
 export default function Vote() {
-  const router = useRouter();
   const [selected, setSelected] = useState(options[0].name);
-  const [status, setStatus] = useState<FormStatus>("idle");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    setStatus("submitting");
-    setErrorMessage("");
-
-    const form = event.currentTarget;
-    const formData = new FormData(form);
-
-    formData.set("flavour", selected);
-
-    const email = String(formData.get("email") ?? "").trim();
-
-    if (!email) {
-      setStatus("error");
-      setErrorMessage("Please enter your email address.");
-      return;
-    }
-
-    try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/hello@hevon.in",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-          },
-          body: formData,
-        },
-      );
-
-      if (!response.ok) {
-        throw new Error("Vote submission failed.");
-      }
-
-      form.reset();
-      router.push("/success");
-    } catch (error) {
-      console.error("Vote submission error:", error);
-
-      setStatus("error");
-      setErrorMessage(
-        "We could not submit your vote. Please try again or email hello@hevon.in.",
-      );
-    }
-  }
 
   return (
     <section
@@ -108,24 +55,13 @@ export default function Vote() {
           </div>
 
           <form
-            onSubmit={handleSubmit}
+            name="flavour-vote"
+            method="POST"
+            action="/success"
+            data-netlify="true"
             className="rounded-[32px] border border-black/8 bg-[#fff8f2] p-5 shadow-[0_22px_65px_rgba(0,0,0,.06)] sm:p-7"
           >
-            <input
-              type="hidden"
-              name="_subject"
-              value={`New HEVON Flavour Vote: ${selected}`}
-            />
-
-            <input type="hidden" name="_template" value="table" />
-
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Thank you for voting for the next HEVON flavour. Your feedback helps us shape what comes next."
-            />
-
-            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="form-name" value="flavour-vote" />
 
             <input
               type="hidden"
@@ -144,12 +80,11 @@ export default function Vote() {
                     key={option.name}
                     type="button"
                     onClick={() => setSelected(option.name)}
-                    disabled={status === "submitting"}
                     className={`group relative overflow-hidden rounded-2xl border p-4 text-left transition duration-300 ${
                       active
                         ? "border-[#ff6a00] bg-white shadow-[0_14px_34px_rgba(255,106,0,.12)]"
                         : "border-black/8 bg-white/70 hover:-translate-y-1 hover:bg-white"
-                    } disabled:cursor-not-allowed disabled:opacity-60`}
+                    }`}
                   >
                     <div
                       className={`absolute inset-y-0 left-0 w-1.5 bg-gradient-to-b ${option.tone}`}
@@ -189,35 +124,17 @@ export default function Vote() {
                 name="email"
                 autoComplete="email"
                 required
-                disabled={status === "submitting"}
                 placeholder="Your email address"
-                className="min-h-14 rounded-full border border-black/10 bg-white px-5 outline-none transition focus:border-[#ff6a00] disabled:cursor-not-allowed disabled:opacity-60"
+                className="min-h-14 rounded-full border border-black/10 bg-white px-5 outline-none transition focus:border-[#ff6a00]"
               />
 
               <button
                 type="submit"
-                disabled={status === "submitting"}
-                className="button-primary min-h-14 disabled:cursor-not-allowed disabled:opacity-60"
+                className="button-primary min-h-14"
               >
-                {status === "submitting" ? (
-                  <span className="inline-flex items-center gap-2">
-                    <LoaderCircle size={17} className="animate-spin" />
-                    Submitting
-                  </span>
-                ) : (
-                  "Submit Vote"
-                )}
+                Submit Vote
               </button>
             </div>
-
-            {status === "error" && (
-              <p
-                role="alert"
-                className="mt-4 text-sm text-red-600"
-              >
-                {errorMessage}
-              </p>
-            )}
 
             <p className="mt-3 text-xs text-black/38">
               One vote per person. We will only use your email for HEVON
