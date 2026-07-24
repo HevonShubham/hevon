@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "HEVON — The Future of Everyday Drinks",
     template: "%s | HEVON",
   },
-  description: "HEVON is developing a premium ready-to-drink protein beverage for India, targeting 25g protein, zero added sugar and everyday taste.",
+  description: "HEVON is developing a premium ready-to-drink protein beverage for India, targeting 18–20g protein, zero added sugar and everyday taste.",
   keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee", "zero added sugar"],
   applicationName: "HEVON",
   authors: [{ name: "HEVON" }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "HEVON — The Future of Everyday Drinks",
-    description: "Premium everyday drinks. Targeting 25g protein and zero added sugar. Launching first with Coffee Latte.",
+    description: "Premium everyday drinks. Targeting 18–20g protein and zero added sugar. Launching first with Coffee Latte.",
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "HEVON — The Future of Everyday Drinks",
-    description: "Premium everyday drinks. Targeting 25g protein and zero added sugar.",
+    description: "Premium everyday drinks. Targeting 18–20g protein and zero added sugar.",
     images: ["/social/og-hevon.png"],
   },
 };

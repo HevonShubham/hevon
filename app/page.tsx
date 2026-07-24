@@ -27,14 +27,14 @@ export default function Home() {
               Great taste.<br />Real nutrition.<br /><span className="text-[#ff6a00]">Zero compromise.</span>
             </h1>
             <p className="mt-7 max-w-xl text-base leading-8 text-black/58 sm:text-lg">
-              HEVON is building a premium everyday drink with <strong className="text-[#111]">25g protein</strong>, <strong className="text-[#111]">zero added sugar</strong> and flavour you will genuinely look forward to.
+              HEVON is building a premium everyday drink with <strong className="text-[#111]">18–20g protein</strong>, <strong className="text-[#111]">zero added sugar</strong> and flavour you will genuinely look forward to.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="#waitlist" className="button-primary">Join Waitlist</a>
               <a href="#flavours" className="button-secondary">Explore Flavours</a>
             </div>
             <div className="mt-12 grid max-w-xl grid-cols-2 gap-5 sm:grid-cols-4">
-              {[['25g','Protein'],['0g','Added Sugar'],['≤150','Target Calories'],['250ml','Ready to Drink']].map(([value,label]) => (
+              {[['18–20g','Protein'],['0g','Added Sugar'],['≤150','Target Calories'],['250ml','Ready to Drink']].map(([value,label]) => (
                 <div key={label}><p className="text-2xl font-black">{value}</p><p className="mt-1 text-sm text-black/45">{label}</p></div>
               ))}
             </div>
