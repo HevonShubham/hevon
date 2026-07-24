@@ -1,67 +1,10 @@
-"use client";
-
-import { FormEvent, useState } from "react";
-import { useRouter } from "next/navigation";
 import {
   CheckCircle2,
-  LoaderCircle,
   LockKeyhole,
   Mail,
 } from "lucide-react";
 
-type FormStatus = "idle" | "submitting" | "error";
-
 export default function Waitlist() {
-  const router = useRouter();
-  const [status, setStatus] = useState<FormStatus>("idle");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    setStatus("submitting");
-    setErrorMessage("");
-
-    const form = event.currentTarget;
-    const formData = new FormData(form);
-
-    const name = String(formData.get("name") ?? "").trim();
-    const email = String(formData.get("email") ?? "").trim();
-
-    if (!name || !email) {
-      setStatus("error");
-      setErrorMessage("Please enter your name and email address.");
-      return;
-    }
-
-    try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/hello@hevon.in",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-          },
-          body: formData,
-        },
-      );
-
-      if (!response.ok) {
-        throw new Error("Waitlist submission failed.");
-      }
-
-      form.reset();
-      router.push("/success");
-    } catch (error) {
-      console.error("Waitlist submission error:", error);
-
-      setStatus("error");
-      setErrorMessage(
-        "We could not submit your details. Please try again or email hello@hevon.in.",
-      );
-    }
-  }
-
   return (
     <section
       id="waitlist"
@@ -84,24 +27,13 @@ export default function Waitlist() {
         </p>
 
         <form
-          onSubmit={handleSubmit}
+          name="hevon-waitlist"
+          method="POST"
+          action="/success"
+          data-netlify="true"
           className="mx-auto mt-9 grid max-w-3xl gap-3 sm:grid-cols-[1fr_1fr_auto]"
         >
-          <input
-            type="hidden"
-            name="_subject"
-            value="New HEVON Waitlist Registration"
-          />
-
-          <input type="hidden" name="_template" value="table" />
-
-          <input
-            type="hidden"
-            name="_autoresponse"
-            value="Thank you for joining the HEVON waitlist. We will keep you updated about product development and launch news."
-          />
-
-          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="form-name" value="hevon-waitlist" />
 
           <input
             type="hidden"
@@ -119,9 +51,8 @@ export default function Waitlist() {
             type="text"
             autoComplete="name"
             required
-            disabled={status === "submitting"}
             placeholder="Your name"
-            className="min-h-14 rounded-full border border-white/15 bg-white/6 px-5 text-white outline-none transition placeholder:text-white/35 focus:border-[#ff6a00] disabled:cursor-not-allowed disabled:opacity-60"
+            className="min-h-14 rounded-full border border-white/15 bg-white/6 px-5 text-white outline-none transition placeholder:text-white/35 focus:border-[#ff6a00]"
           />
 
           <label className="sr-only" htmlFor="waitlist-email">
@@ -134,41 +65,23 @@ export default function Waitlist() {
             type="email"
             autoComplete="email"
             required
-            disabled={status === "submitting"}
             placeholder="Email address"
-            className="min-h-14 rounded-full border border-white/15 bg-white/6 px-5 text-white outline-none transition placeholder:text-white/35 focus:border-[#ff6a00] disabled:cursor-not-allowed disabled:opacity-60"
+            className="min-h-14 rounded-full border border-white/15 bg-white/6 px-5 text-white outline-none transition placeholder:text-white/35 focus:border-[#ff6a00]"
           />
 
           <button
             type="submit"
-            disabled={status === "submitting"}
-            className="group min-h-14 rounded-full bg-[#ff6a00] px-7 font-bold text-white shadow-[0_16px_35px_rgba(255,106,0,.22)] transition hover:-translate-y-0.5 hover:shadow-[0_20px_42px_rgba(255,106,0,.3)] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0"
+            className="group min-h-14 rounded-full bg-[#ff6a00] px-7 font-bold text-white shadow-[0_16px_35px_rgba(255,106,0,.22)] transition hover:-translate-y-0.5 hover:shadow-[0_20px_42px_rgba(255,106,0,.3)]"
           >
-            {status === "submitting" ? (
-              <span className="inline-flex items-center gap-2">
-                <LoaderCircle size={17} className="animate-spin" />
-                Joining
-              </span>
-            ) : (
-              <span className="inline-flex items-center gap-2">
-                Join Waitlist
-                <Mail
-                  size={17}
-                  className="transition-transform group-hover:translate-x-0.5"
-                />
-              </span>
-            )}
+            <span className="inline-flex items-center gap-2">
+              Join Waitlist
+              <Mail
+                size={17}
+                className="transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
           </button>
         </form>
-
-        {status === "error" && (
-          <p
-            role="alert"
-            className="mx-auto mt-4 max-w-xl text-sm text-red-300"
-          >
-            {errorMessage}
-          </p>
-        )}
 
         <div className="mx-auto mt-5 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/40">
           <span className="inline-flex items-center gap-1.5">
