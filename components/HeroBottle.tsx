@@ -32,7 +32,7 @@ export default function HeroBottle({ compact = false }: { compact?: boolean }) {
           }}
         >
           <Image
-            src="/hero-bottle-realistic.png"
+            src="/hero-bottle-realistic-v2.png"
             alt="HEVON Coffee Latte protein drink with coffee beans and creamy splash"
             width={916}
             height={690}

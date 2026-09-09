@@ -57,7 +57,7 @@ export default function WhyHevon() {
             className="absolute inset-0"
           >
             <Image
-              src="/hero-bottle-realistic.png"
+              src="/hero-bottle-realistic-v2.png"
               alt="HEVON Coffee Latte realistic product bottle with coffee beans and creamy splash"
               fill
               sizes="(max-width: 1024px) 100vw, 55vw"
