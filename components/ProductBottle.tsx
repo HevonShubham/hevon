@@ -51,9 +51,9 @@ export default function ProductBottle({
 
       {/* Main PET bottle */}
       <div
-        className="absolute inset-x-0 bottom-[5%] top-[9%] overflow-hidden rounded-b-[58px] border border-black/10 shadow-[0_48px_90px_rgba(67,34,18,.34),inset_0_0_32px_rgba(255,255,255,.22)]"
+        className="absolute inset-x-0 bottom-[5%] top-[9%] overflow-hidden rounded-b-[12px] border border-black/10 shadow-[0_48px_90px_rgba(67,34,18,.34),inset_0_0_32px_rgba(255,255,255,.22)]"
         style={{
-          clipPath: "polygon(31% 0,69% 0,78% 3%,86% 10%,92% 22%,96% 100%,4% 100%,8% 22%,14% 10%,22% 3%)",
+          clipPath: "polygon(31% 0,69% 0,79% 3%,90% 10%,94% 17%,94% 100%,6% 100%,6% 17%,10% 10%,21% 3%)",
           background: `linear-gradient(180deg, rgba(255,255,255,.48) 0%, rgba(255,255,255,.16) 15%, ${liquidFrom}dd 19%, ${liquidMid}f2 62%, ${liquidTo} 100%)`,
         }}
       >
@@ -85,7 +85,7 @@ export default function ProductBottle({
         {/* Label */}
         <div className="absolute inset-x-[13%] top-[22%] bottom-[10%] rounded-[22px] border border-black/10 bg-[#f7f2ec]/95 shadow-[0_14px_30px_rgba(0,0,0,.17)] backdrop-blur-[2px]">
           <div className="absolute inset-x-0 top-[7%] text-center text-[#111]">
-            <p className={clsx("font-black leading-none", compact ? "text-xl" : "text-3xl sm:text-4xl")}>18–20g</p>
+            <p className={clsx("font-black leading-none", compact ? "text-xl" : "text-3xl sm:text-4xl")}>20 gm</p>
             <p className={clsx("mt-1 font-black uppercase tracking-[.24em]", compact ? "text-[6px]" : "text-[8px]")}>Protein</p>
           </div>
 
