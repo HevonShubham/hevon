@@ -5,8 +5,8 @@ import { Plus } from "lucide-react";
 import { useState } from "react";
 
 const items = [
-  ["What is HEVON?", "HEVON is the brand behind Protein Coffee—a ready-to-drink coffee with 20 gm protein being developed for launch in India."],
-  ["How much protein will it contain?", "Each 250 ml bottle is designed to contain 20 gm protein. Final values will be confirmed after product development, stability testing and regulatory review."],
+  ["What is HEVON?", "HEVON is the brand behind Protein Coffee—a ready-to-drink coffee with 22g protein being developed for launch in India."],
+  ["How much protein will it contain?", "Each 250 ml bottle is designed to contain 22g protein. Final values will be confirmed after product development, stability testing and regulatory review."],
   ["Will every flavour contain caffeine?", "No. Caffeine is intended only for coffee-based flavours. Future non-coffee concepts would remain protein drinks without added caffeine."],
   ["Is HEVON available to buy now?", "Not yet. HEVON is in the pre-launch product-development stage. Joining the waitlist is the best way to receive verified launch updates."],
   ["Are the future flavours confirmed?", "No. Protein Coffee is the planned launch product. Other flavours shown are concept directions and may change based on formulation feasibility and community feedback."],

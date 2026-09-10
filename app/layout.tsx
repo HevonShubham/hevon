@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "HEVON PROFFEE — Protein Coffee",
     template: "%s | HEVON",
   },
-  description: "HEVON Protein Coffee combines real coffee character with 20 gm protein and zero added sugar. Fuel Your Day.",
+  description: "HEVON Protein Coffee combines real coffee character with 22g protein and zero added sugar. Fuel Your Day.",
   keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee", "zero added sugar"],
   applicationName: "HEVON",
   authors: [{ name: "HEVON" }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "HEVON PROFFEE — Protein Coffee",
-    description: "HEVON Protein Coffee with 20 gm protein and zero added sugar. Fuel Your Day.",
+    description: "HEVON Protein Coffee with 22g protein and zero added sugar. Fuel Your Day.",
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "HEVON PROFFEE — Protein Coffee",
-    description: "HEVON Protein Coffee with 20 gm protein and zero added sugar. Fuel Your Day.",
+    description: "HEVON Protein Coffee with 22g protein and zero added sugar. Fuel Your Day.",
     images: ["/social/og-hevon.png"],
   },
 };

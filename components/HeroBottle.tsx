@@ -20,24 +20,16 @@ export default function HeroBottle({ compact = false }: { compact?: boolean }) {
           scale: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
           y: { duration: 6.5, repeat: Infinity, ease: "easeInOut" },
         }}
-        className={`relative z-10 w-full ${compact ? "max-w-[430px]" : "max-w-[720px]"}`}
+        className={`relative z-10 w-full ${compact ? "max-w-[360px]" : "max-w-[560px]"}`}
       >
-        <div
-          className="relative overflow-hidden"
-          style={{
-            WebkitMaskImage:
-              "radial-gradient(ellipse 96% 94% at 54% 48%, #000 74%, transparent 100%)",
-            maskImage:
-              "radial-gradient(ellipse 96% 94% at 54% 48%, #000 74%, transparent 100%)",
-          }}
-        >
+        <div className="relative overflow-hidden rounded-[28px] shadow-[0_28px_70px_rgba(67,34,18,.18)]">
           <Image
-            src="/hero-bottle-realistic-v2.png"
-            alt="HEVON PROFFEE Protein Coffee with coffee beans and creamy splash"
-            width={916}
-            height={690}
+            src="/hevon-bottle-four-view-corrected.png"
+            alt="HEVON high-protein iced coffee bottle shown from the front, back and both sides"
+            width={1145}
+            height={1374}
             priority={!compact}
-            sizes={compact ? "(max-width: 768px) 88vw, 430px" : "(max-width: 1024px) 92vw, 720px"}
+            sizes={compact ? "(max-width: 768px) 84vw, 360px" : "(max-width: 1024px) 88vw, 560px"}
             className="h-auto w-full select-none object-contain"
           />
         </div>

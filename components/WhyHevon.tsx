@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Check, Coffee, Droplets, Sparkles, Zap } from "lucide-react";
 
 const points = [
-  "20 gm high-quality protein",
+  "22g high-quality protein",
   "Zero added sugar",
   "Real ingredients",
   "Designed for everyday routines",
@@ -57,11 +57,11 @@ export default function WhyHevon() {
             className="absolute inset-0"
           >
             <Image
-              src="/hero-bottle-realistic-v2.png"
-              alt="HEVON PROFFEE Protein Coffee bottle with coffee beans and creamy splash"
+              src="/hevon-bottle-four-view-corrected.png"
+              alt="HEVON high-protein iced coffee packaging shown from four sides"
               fill
               sizes="(max-width: 1024px) 100vw, 55vw"
-              className="object-cover object-center opacity-95"
+              className="object-contain object-center p-4 opacity-95 sm:p-6"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/8 to-black/10" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/10" />
