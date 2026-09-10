@@ -5,11 +5,11 @@ import { Plus } from "lucide-react";
 import { useState } from "react";
 
 const items = [
-  ["What is HEVON?", "HEVON is a planned ready-to-drink high-protein beverage brand. Coffee Latte is the first product currently being explored for launch in India."],
+  ["What is HEVON?", "HEVON is the brand behind Protein Coffee—a ready-to-drink coffee with 20 gm protein being developed for launch in India."],
   ["How much protein will it contain?", "Each 250 ml bottle is designed to contain 20 gm protein. Final values will be confirmed after product development, stability testing and regulatory review."],
   ["Will every flavour contain caffeine?", "No. Caffeine is intended only for coffee-based flavours. Future non-coffee concepts would remain protein drinks without added caffeine."],
   ["Is HEVON available to buy now?", "Not yet. HEVON is in the pre-launch product-development stage. Joining the waitlist is the best way to receive verified launch updates."],
-  ["Are the future flavours confirmed?", "No. Coffee Latte is the planned launch flavour. Other flavours shown are concept directions and may change based on formulation feasibility and community feedback."],
+  ["Are the future flavours confirmed?", "No. Protein Coffee is the planned launch product. Other flavours shown are concept directions and may change based on formulation feasibility and community feedback."],
   ["Where will HEVON launch?", "The initial focus is India, with channel and city decisions to be finalised after manufacturing, regulatory and distribution planning."],
 ];
 

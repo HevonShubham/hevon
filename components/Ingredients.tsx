@@ -5,7 +5,7 @@ const principles = [
   {
     icon: Coffee,
     title: "Real coffee experience",
-    copy: "Coffee Latte is being developed around real Arabica coffee character—not a generic coffee-flavoured shake.",
+    copy: "Protein Coffee is being developed around real Arabica coffee character—not a generic coffee-flavoured shake.",
   },
   {
     icon: FlaskConical,

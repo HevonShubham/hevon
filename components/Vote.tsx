@@ -86,7 +86,7 @@ export default function Vote() {
             </h2>
 
             <p className="mt-5 max-w-xl text-base leading-7 text-black/55">
-              Coffee Latte is planned first. Your vote will help us understand
+              Protein Coffee is planned first. Your vote will help us understand
               which flavour the community wants us to develop next.
             </p>
           </div>

@@ -6,7 +6,7 @@ import { ArrowUpRight, Coffee, Leaf, Sparkles } from "lucide-react";
 
 const flavours = [
   {
-    name: "Coffee Latte",
+    name: "Protein Coffee",
     copy: "Real Arabica coffee with a smooth, balanced finish.",
     from: "#f7eadf",
     to: "#bd855e",
@@ -80,7 +80,7 @@ export default function Flavours() {
             <p className="text-base leading-7 text-black/55">
               Every HEVON flavour follows the same promise: useful nutrition, zero added sugar and taste made for everyday life.
             </p>
-            <p className="mt-3 text-xs leading-5 text-black/38">Coffee Latte is the planned launch flavour. The rest are future concepts.</p>
+            <p className="mt-3 text-xs leading-5 text-black/38">Protein Coffee is the planned launch product. The rest are future concepts.</p>
           </div>
         </div>
 

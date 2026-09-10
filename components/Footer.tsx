@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col gap-9 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <Image src="/logo/hevon-wordmark-dark.svg" alt="HEVON" width={146} height={36} className="h-auto w-[132px]" />
-            <p className="mt-3 max-w-sm text-sm leading-6 text-white/45">The Future of Everyday Drinks. Currently in pre-launch product development in India.</p>
+            <p className="mt-3 max-w-sm text-sm leading-6 text-white/45">HEVON Protein Coffee. Fuel Your Day. Currently in pre-launch product development in India.</p>
           </div>
 
           <div className="grid gap-8 text-sm sm:grid-cols-2">

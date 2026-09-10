@@ -22,12 +22,12 @@ export default function Home() {
         <div className="pointer-events-none absolute -right-24 bottom-20 h-[420px] w-[420px] rounded-full bg-[#ff6a00]/10 blur-3xl" />
         <div className="relative z-10 grid w-full items-center gap-4 lg:grid-cols-2 lg:gap-12">
           <Reveal direction="left" className="py-8 lg:py-0">
-            <p className="eyebrow">Pre-launch · Made for India</p>
+            <p className="eyebrow">HEVON PROFFEE · Made for India</p>
             <h1 className="mt-6 text-[52px] font-black leading-[.91] tracking-[-.06em] sm:text-6xl md:text-7xl lg:text-[78px]">
-              Great taste.<br />Real nutrition.<br /><span className="text-[#ff6a00]">Zero compromise.</span>
+              Protein Coffee.<br /><span className="text-[#ff6a00]">Fuel Your Day.</span>
             </h1>
             <p className="mt-7 max-w-xl text-base leading-8 text-black/58 sm:text-lg">
-              HEVON is building a premium everyday drink with <strong className="text-[#111]">20 gm protein</strong>, <strong className="text-[#111]">zero added sugar</strong> and flavour you will genuinely look forward to.
+              HEVON Protein Coffee brings together real coffee character, <strong className="text-[#111]">20 gm protein</strong> and <strong className="text-[#111]">zero added sugar</strong> in one convenient bottle.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="#waitlist" className="button-primary">Join Waitlist</a>

@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "HEVON",
+    name: "HEVON PROFFEE",
     short_name: "HEVON",
-    description: "The Future of Everyday Drinks.",
+    description: "HEVON Protein Coffee. Fuel Your Day.",
     start_url: "/",
     display: "standalone",
     background_color: "#fff8f2",

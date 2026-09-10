@@ -21,7 +21,7 @@ type ProductBottleProps = {
 
 export default function ProductBottle({
   compact = false,
-  flavour = "Coffee Latte",
+  flavour = "Protein Coffee",
   liquidFrom = "#e8c3a1",
   liquidMid = "#bd8056",
   liquidTo = "#6f3f25",
@@ -99,7 +99,7 @@ export default function ProductBottle({
 
           {!compact && (
             <p className={clsx("absolute inset-x-5 bottom-[15%] text-center text-[9px] leading-4", dark ? "text-black/70" : "text-black/65")}>
-              The <strong>FUTURE</strong> of Everyday Drinks.
+              <strong>Fuel Your Day.</strong>
             </p>
           )}
 

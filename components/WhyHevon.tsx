@@ -58,7 +58,7 @@ export default function WhyHevon() {
           >
             <Image
               src="/hero-bottle-realistic-v2.png"
-              alt="HEVON Coffee Latte realistic product bottle with coffee beans and creamy splash"
+              alt="HEVON PROFFEE Protein Coffee bottle with coffee beans and creamy splash"
               fill
               sizes="(max-width: 1024px) 100vw, 55vw"
               className="object-cover object-center opacity-95"

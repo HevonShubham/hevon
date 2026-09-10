@@ -28,8 +28,9 @@ export default function Navbar() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${scrolled ? "border-black/8 bg-[#fff8f2]/94 shadow-[0_12px_32px_rgba(0,0,0,.06)] backdrop-blur-xl" : "border-black/5 bg-[#fff8f2]/88 backdrop-blur-lg"}`}>
       <div className={`mx-auto flex max-w-7xl items-center justify-between px-5 transition-all duration-300 sm:px-6 lg:px-10 ${scrolled ? "h-[68px]" : "h-[76px]"}`}>
-        <a href="#home" aria-label="HEVON home" className="shrink-0">
-          <Image src="/logo/hevon-wordmark.svg" alt="HEVON" width={146} height={36} priority className="h-auto w-[118px] sm:w-[132px]" />
+        <a href="#home" aria-label="HEVON PROFFEE home" className="flex shrink-0 items-center gap-3">
+          <Image src="/logo/hevon-wordmark.svg" alt="HEVON" width={146} height={36} priority className="h-auto w-[104px] sm:w-[118px]" />
+          <span className="border-l border-black/15 pl-3 text-[11px] font-black tracking-[.18em] text-[#ff6a00] sm:text-xs">PROFFEE</span>
         </a>
 
         <nav className="hidden items-center gap-8 text-[13px] font-semibold md:flex">

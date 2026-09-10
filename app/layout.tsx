@@ -5,10 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hevon.in"),
   title: {
-    default: "HEVON — The Future of Everyday Drinks",
+    default: "HEVON PROFFEE — Protein Coffee",
     template: "%s | HEVON",
   },
-  description: "HEVON is developing a premium ready-to-drink protein beverage for India with 20 gm protein, zero added sugar and everyday taste.",
+  description: "HEVON Protein Coffee combines real coffee character with 20 gm protein and zero added sugar. Fuel Your Day.",
   keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee", "zero added sugar"],
   applicationName: "HEVON",
   authors: [{ name: "HEVON" }],
@@ -21,17 +21,17 @@ export const metadata: Metadata = {
     apple: "/logo/hevon-icon.svg",
   },
   openGraph: {
-    title: "HEVON — The Future of Everyday Drinks",
-    description: "Premium everyday drinks with 20 gm protein and zero added sugar. Launching first with Coffee Latte.",
+    title: "HEVON PROFFEE — Protein Coffee",
+    description: "HEVON Protein Coffee with 20 gm protein and zero added sugar. Fuel Your Day.",
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
-    images: [{ url: "/social/og-hevon.png", width: 1200, height: 630, alt: "HEVON protein drink pre-launch" }],
+    images: [{ url: "/social/og-hevon.png", width: 1200, height: 630, alt: "HEVON PROFFEE Protein Coffee — Fuel Your Day" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HEVON — The Future of Everyday Drinks",
-    description: "Premium everyday drinks with 20 gm protein and zero added sugar.",
+    title: "HEVON PROFFEE — Protein Coffee",
+    description: "HEVON Protein Coffee with 20 gm protein and zero added sugar. Fuel Your Day.",
     images: ["/social/og-hevon.png"],
   },
 };
