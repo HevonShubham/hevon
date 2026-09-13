@@ -24,7 +24,7 @@ export default function HeroBottle({ compact = false }: { compact?: boolean }) {
       >
         <div className="relative mx-auto drop-shadow-[0_34px_40px_rgba(67,34,18,.24)]">
           <Image
-            src="/hevon-bottle-approved-front.png"
+            src="/hevon-bottle-brand-front.png"
             alt="HEVON high-protein iced coffee bottle with 22g protein"
             width={1024}
             height={1536}

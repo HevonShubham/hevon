@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hevon.in"),
   title: {
-    default: "HEVON PROFFEE — Protein Coffee",
+    default: "HEVON — Protein Coffee",
     template: "%s | HEVON",
   },
   description: "HEVON Protein Coffee combines real coffee character with 22g protein and zero added sugar. Fuel Your Day.",
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     apple: "/logo/hevon-icon.svg",
   },
   openGraph: {
-    title: "HEVON PROFFEE — Protein Coffee",
+    title: "HEVON — Protein Coffee",
     description: "HEVON Protein Coffee with 22g protein and zero added sugar. Fuel Your Day.",
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
-    images: [{ url: "/social/og-hevon.png", width: 1200, height: 630, alt: "HEVON PROFFEE Protein Coffee — Fuel Your Day" }],
+    images: [{ url: "/social/og-hevon.png", width: 1200, height: 630, alt: "HEVON Protein Coffee — A Higher You Every Day" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HEVON PROFFEE — Protein Coffee",
+    title: "HEVON — Protein Coffee",
     description: "HEVON Protein Coffee with 22g protein and zero added sugar. Fuel Your Day.",
     images: ["/social/og-hevon.png"],
   },

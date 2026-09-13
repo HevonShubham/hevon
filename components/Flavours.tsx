@@ -119,7 +119,7 @@ export default function Flavours() {
                 >
                   <div className="relative h-full w-[82%] max-w-[355px] drop-shadow-[0_28px_30px_rgba(40,18,7,.28)]">
                     <Image
-                      src="/hevon-bottle-approved-front.png"
+                      src="/hevon-bottle-brand-front.png"
                       alt="Approved HEVON Protein Coffee bottle with 22g protein"
                       fill
                       sizes="(max-width: 768px) 82vw, (max-width: 1200px) 42vw, 28vw"

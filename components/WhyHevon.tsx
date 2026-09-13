@@ -57,8 +57,8 @@ export default function WhyHevon() {
             className="absolute inset-0"
           >
             <Image
-              src="/hevon-bottle-four-view-corrected.png"
-              alt="HEVON high-protein iced coffee packaging shown from four sides"
+              src="/hevon-bottle-brand-guide.png"
+              alt="Official HEVON 250 ml iced coffee packaging shown from every side"
               fill
               sizes="(max-width: 1024px) 100vw, 55vw"
               className="object-contain object-center p-4 opacity-95 sm:p-6"
