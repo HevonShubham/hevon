@@ -22,15 +22,15 @@ export default function HeroBottle({ compact = false }: { compact?: boolean }) {
         }}
         className={`relative z-10 w-full ${compact ? "max-w-[360px]" : "max-w-[560px]"}`}
       >
-        <div className="relative overflow-hidden rounded-[28px] shadow-[0_28px_70px_rgba(67,34,18,.18)]">
+        <div className="relative mx-auto drop-shadow-[0_34px_40px_rgba(67,34,18,.24)]">
           <Image
-            src="/hevon-bottle-four-view-corrected.png"
-            alt="HEVON high-protein iced coffee bottle shown from the front, back and both sides"
-            width={1145}
-            height={1374}
+            src="/hevon-bottle-approved-front.png"
+            alt="HEVON high-protein iced coffee bottle with 22g protein"
+            width={1024}
+            height={1536}
             priority={!compact}
-            sizes={compact ? "(max-width: 768px) 84vw, 360px" : "(max-width: 1024px) 88vw, 560px"}
-            className="h-auto w-full select-none object-contain"
+            sizes={compact ? "(max-width: 768px) 68vw, 300px" : "(max-width: 1024px) 74vw, 470px"}
+            className="mx-auto h-auto max-h-[660px] w-auto select-none object-contain"
           />
         </div>
       </motion.div>

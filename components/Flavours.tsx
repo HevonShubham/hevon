@@ -12,7 +12,6 @@ const flavours = [
     to: "#bd855e",
     note: "Launch flavour",
     icon: Coffee,
-    filter: "none",
     badge: "bg-[#111111]",
   },
   {
@@ -22,7 +21,6 @@ const flavours = [
     to: "#4c291e",
     note: "Future concept",
     icon: Sparkles,
-    filter: "sepia(.5) saturate(1.55) brightness(.68) hue-rotate(338deg)",
     badge: "bg-[#3d2018]",
   },
   {
@@ -32,7 +30,6 @@ const flavours = [
     to: "#ddb36d",
     note: "Future concept",
     icon: Sparkles,
-    filter: "saturate(.55) brightness(1.16)",
     badge: "bg-[#b77a17]",
   },
   {
@@ -42,7 +39,6 @@ const flavours = [
     to: "#dc7f8d",
     note: "Future concept",
     icon: Sparkles,
-    filter: "hue-rotate(310deg) saturate(1.2) brightness(1.04)",
     badge: "bg-[#c64353]",
   },
   {
@@ -52,7 +48,6 @@ const flavours = [
     to: "#e2942b",
     note: "Future concept",
     icon: Sparkles,
-    filter: "sepia(.42) saturate(1.55) brightness(1.1)",
     badge: "bg-[#d77516]",
   },
   {
@@ -62,7 +57,6 @@ const flavours = [
     to: "#82964d",
     note: "Future concept",
     icon: Leaf,
-    filter: "hue-rotate(60deg) saturate(.82) brightness(.96)",
     badge: "bg-[#58702b]",
   },
 ];
@@ -125,12 +119,11 @@ export default function Flavours() {
                 >
                   <div className="relative h-full w-[82%] max-w-[355px] drop-shadow-[0_28px_30px_rgba(40,18,7,.28)]">
                     <Image
-                      src="/hevon-bottle-cutout.png"
-                      alt={`${flavour.name} HEVON protein drink concept`}
+                      src="/hevon-bottle-approved-front.png"
+                      alt="Approved HEVON Protein Coffee bottle with 22g protein"
                       fill
                       sizes="(max-width: 768px) 82vw, (max-width: 1200px) 42vw, 28vw"
                       className="select-none object-contain object-bottom"
-                      style={{ filter: flavour.filter }}
                     />
                   </div>
                 </motion.div>
