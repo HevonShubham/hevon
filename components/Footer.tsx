@@ -21,6 +21,7 @@ export default function Footer() {
             </div>
             <div className="space-y-3 text-white/60">
               <p className="text-xs font-black uppercase tracking-[.15em] text-white">Legal</p>
+              <a href="/feedback.html" className="block transition hover:text-white">Share taste feedback</a>
               <Link href="/privacy" className="block transition hover:text-white">Privacy</Link>
               <Link href="/terms" className="block transition hover:text-white">Terms</Link>
             </div>

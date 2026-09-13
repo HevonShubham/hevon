@@ -31,6 +31,7 @@ export default function TasteLab() {
         <div>
           <p className="eyebrow">HEVON Taste Lab</p>
           <h2 className="section-title mt-5 text-white">Your taste.<br /><span className="font-serif italic text-[#ff8b3d]">Built into the bottle.</span></h2>
+          <a href="/feedback.html" className="mt-6 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#ff6a00] px-6 py-3 font-bold text-white">Already tried HEVON? Share taste feedback <ArrowRight size={18} /></a>
           <p className="mt-6 max-w-xl text-base leading-8 text-white/58">Tell us what matters before the formulation is locked. Your answers help shape sweetness, coffee intensity, texture and how we explain HEVON.</p>
           <div className="mt-8 space-y-3 text-sm text-white/65">
             {["Influence the final taste profile", "Help us understand protein-coffee awareness", "Get invited to future tasting sessions"].map((item) => <p key={item} className="flex items-center gap-3"><CheckCircle2 size={18} className="text-[#ff6a00]" />{item}</p>)}
