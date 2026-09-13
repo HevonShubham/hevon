@@ -27,7 +27,7 @@ export default function Waitlist() {
     formData.forEach((value, key) => body.append(key, String(value)));
 
     try {
-      const response = await fetch("/__forms.html", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: body.toString(),
@@ -75,6 +75,7 @@ export default function Waitlist() {
           className="mx-auto mt-9 grid max-w-3xl gap-3 sm:grid-cols-[1fr_1fr_auto]"
         >
           <input type="hidden" name="form-name" value="hevon-waitlist" />
+          <input className="hidden" name="bot-field" tabIndex={-1} autoComplete="off" />
 
           <input
             type="hidden"

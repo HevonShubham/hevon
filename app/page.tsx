@@ -11,6 +11,8 @@ import Reveal from "@/components/Reveal";
 import Waitlist from "@/components/Waitlist";
 import WhyHevon from "@/components/WhyHevon";
 import Vote from "@/components/Vote";
+import LaunchCountdown from "@/components/LaunchCountdown";
+import TasteLab from "@/components/TasteLab";
 
 export default function Home() {
   return (
@@ -47,8 +49,10 @@ export default function Home() {
       </section>
 
       <PerformanceStrip />
+      <LaunchCountdown />
       <Flavours />
       <Vote />
+      <TasteLab />
       <WhyHevon />
       <Ingredients />
       <Comparison />

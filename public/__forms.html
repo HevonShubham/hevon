@@ -5,18 +5,32 @@
     <title>HEVON forms</title>
   </head>
   <body>
-    <form name="hevon-waitlist" data-netlify="true" hidden>
+    <form name="hevon-waitlist" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="hevon-waitlist" />
       <input name="source" type="text" />
       <input name="name" type="text" />
       <input name="email" type="email" />
+      <input name="bot-field" type="text" />
     </form>
 
-    <form name="flavour-vote" data-netlify="true" hidden>
+    <form name="flavour-vote" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="flavour-vote" />
       <input name="source" type="text" />
       <input name="flavour" type="text" />
       <input name="email" type="email" />
+      <input name="bot-field" type="text" />
+    </form>
+
+    <form name="hevon-feedback" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="hevon-feedback" />
+      <input name="source" type="text" />
+      <input name="name" type="text" />
+      <input name="email" type="email" />
+      <input name="city" type="text" />
+      <input name="coffee-strength" type="text" />
+      <input name="awareness-driver" type="text" />
+      <textarea name="purchase-feedback"></textarea>
+      <input name="bot-field" type="text" />
     </form>
   </body>
 </html>

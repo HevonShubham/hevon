@@ -8,6 +8,7 @@ const links = [
   ["Flavours", "#flavours"],
   ["Why HEVON", "#why-hevon"],
   ["Vote", "#vote"],
+  ["Taste Lab", "#taste-lab"],
   ["Ingredients", "#ingredients"],
   ["Compare", "#comparison"],
   ["Story", "#story"],
