@@ -112,24 +112,38 @@ export default function Flavours() {
                   </span>
                 </div>
 
-                <motion.div
-                  className="pointer-events-none absolute inset-x-0 bottom-8 top-[158px] z-10 flex items-end justify-center"
-                  whileHover={{ scale: 1.055, rotate: index % 2 === 0 ? -1.2 : 1.2 }}
-                  transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  <div className="relative h-full w-[82%] max-w-[355px] drop-shadow-[0_28px_30px_rgba(40,18,7,.28)]">
-                    <Image
-                      src="/hevon-bottle-brand-front.png"
-                      alt="Approved HEVON Protein Coffee bottle with 22g protein"
-                      fill
-                      sizes="(max-width: 768px) 82vw, (max-width: 1200px) 42vw, 28vw"
-                      className="select-none object-contain object-bottom"
-                    />
-                  </div>
-                </motion.div>
+                {index === 0 ? (
+                  <motion.div
+                    className="pointer-events-none absolute inset-x-0 bottom-8 top-[158px] z-10 flex items-end justify-center"
+                    whileHover={{ scale: 1.055, rotate: -1.2 }}
+                    transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                  >
+                    <div className="relative h-full w-[82%] max-w-[355px] drop-shadow-[0_28px_30px_rgba(40,18,7,.28)]">
+                      <Image
+                        src="/hevon-bottle-brand-front.png"
+                        alt="Approved HEVON Protein Coffee bottle with 22g protein"
+                        fill
+                        sizes="(max-width: 768px) 82vw, (max-width: 1200px) 42vw, 28vw"
+                        className="select-none object-contain object-bottom"
+                      />
+                    </div>
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    className="pointer-events-none absolute inset-x-0 bottom-20 top-[205px] z-10 flex items-center justify-center"
+                    whileHover={{ scale: 1.06, rotate: index % 2 === 0 ? -3 : 3 }}
+                    transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                  >
+                    <div className="relative grid h-56 w-56 place-items-center rounded-full border border-white/55 bg-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,.65),0_28px_70px_rgba(45,20,8,.2)] backdrop-blur-md">
+                      <div className="absolute inset-5 rounded-full border border-white/45" />
+                      <Icon size={58} strokeWidth={1.25} className="relative text-black/70" />
+                      <span className="absolute bottom-11 text-[10px] font-black uppercase tracking-[.24em] text-black/45">In development</span>
+                    </div>
+                  </motion.div>
+                )}
 
                 <div className="pointer-events-none absolute inset-x-8 bottom-5 z-20 flex items-center justify-between">
-                  <span className="text-[11px] font-black uppercase tracking-[.16em] text-white drop-shadow-md">22g Protein</span>
+                  <span className="text-[11px] font-black uppercase tracking-[.16em] text-white drop-shadow-md">{index === 0 ? "22g Protein" : "Community concept"}</span>
                   <span className={`rounded-full px-3 py-2 text-[10px] font-black uppercase tracking-[.12em] text-white shadow-lg ${flavour.badge}`}>
                     {flavour.name}
                   </span>
