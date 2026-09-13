@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "HEVON — Protein Coffee",
     template: "%s | HEVON",
   },
-  description: "HEVON Protein Coffee combines real coffee character with 22g protein and zero added sugar. Fuel Your Day.",
+  description: "Meet HEVON: everyday nutrition, starting with protein iced coffee. Follow the launch, share your taste feedback and help shape what comes next.",
   keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee", "zero added sugar"],
   applicationName: "HEVON",
   authors: [{ name: "HEVON" }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "HEVON — Protein Coffee",
-    description: "HEVON Protein Coffee with 22g protein and zero added sugar. Fuel Your Day.",
+    description: "Your coffee, with a little more in it. Meet HEVON protein iced coffee, join the launch list and help shape what comes next.",
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "HEVON — Protein Coffee",
-    description: "HEVON Protein Coffee with 22g protein and zero added sugar. Fuel Your Day.",
+    description: "Your coffee, with a little more in it. Meet HEVON protein iced coffee, join the launch list and help shape what comes next.",
     images: ["/social/og-hevon.png"],
   },
 };

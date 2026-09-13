@@ -1,77 +1,33 @@
-import Comparison from "@/components/Comparison";
-import Community from "@/components/Community";
-import FAQ from "@/components/FAQ";
-import Flavours from "@/components/Flavours";
-import Footer from "@/components/Footer";
-import Ingredients from "@/components/Ingredients";
+import Image from "next/image";
+import Link from "next/link";
 import HeroBottle from "@/components/HeroBottle";
-import Navbar from "@/components/Navbar";
-import PerformanceStrip from "@/components/PerformanceStrip";
-import Reveal from "@/components/Reveal";
-import Waitlist from "@/components/Waitlist";
-import WhyHevon from "@/components/WhyHevon";
-import Vote from "@/components/Vote";
-import LaunchCountdown from "@/components/LaunchCountdown";
-import TasteLab from "@/components/TasteLab";
+import BrandForms from "@/components/BrandForms";
+import "./brand.css";
+
+const faqs = [
+  ["What is HEVON?", "HEVON is an Indian everyday nutrition brand in development. We’re starting with a ready-to-drink protein coffee, built around the coffee experience you actually look forward to."],
+  ["Can I buy it yet?", "Not yet. Join the launch list and we’ll share availability, pricing and ordering details when the first product is ready. Joining is free and is not a pre-order."],
+  ["How much protein will it have?", "Our development target is 20–25g protein in a 250ml bottle, subject to taste, texture and stability. Final nutrition, ingredients, allergens and caffeine information will be shared before sale. Images show a packaging concept."],
+  ["Is HEVON only for people who work out?", "We’re designing HEVON for everyday coffee drinkers as well as active lifestyles. You’ll be able to review the final ingredients and nutrition information to decide whether it fits your routine."],
+  ["How can I give feedback?", "Open our taste feedback form after trying HEVON. Only your taste rating is required. You can also tell us about sweetness, texture and what you’d like next. Nutrition preferences and contact details are optional."],
+  ["What’s next beyond coffee?", "Our ambition is to make everyday nutrition more useful and personal over time. Your preferences will help guide future flavours, products and experiences. These are future ideas, not services available today."],
+];
 
 export default function Home() {
-  return (
-    <main className="min-h-screen overflow-hidden bg-[#fff8f2] text-[#111]">
-      <Navbar />
-
-      <section id="home" className="relative mx-auto flex min-h-screen max-w-7xl scroll-mt-20 items-center px-5 pb-12 pt-28 sm:px-6 lg:px-10">
-        <div className="pointer-events-none absolute -left-32 top-40 h-96 w-96 rounded-full bg-[#ff6a00]/10 blur-3xl" />
-        <div className="pointer-events-none absolute -right-24 bottom-20 h-[420px] w-[420px] rounded-full bg-[#ff6a00]/10 blur-3xl" />
-        <div className="relative z-10 grid w-full items-center gap-4 lg:grid-cols-2 lg:gap-12">
-          <Reveal direction="left" className="py-8 lg:py-0">
-            <p className="eyebrow">HEVON · A Higher You Every Day</p>
-            <h1 className="mt-6 text-[52px] font-black leading-[.91] tracking-[-.06em] sm:text-6xl md:text-7xl lg:text-[78px]">
-              Protein Coffee.<br /><span className="text-[#ff6a00]">Fuel Your Day.</span>
-            </h1>
-            <p className="mt-7 max-w-xl text-base leading-8 text-black/58 sm:text-lg">
-              HEVON Protein Coffee brings together real coffee character, <strong className="text-[#111]">22g protein</strong> and <strong className="text-[#111]">zero added sugar</strong> in one convenient bottle.
-            </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a href="#waitlist" className="button-primary">Join Waitlist</a>
-              <a href="#flavours" className="button-secondary">Explore Flavours</a>
-            </div>
-            <div className="mt-12 grid max-w-xl grid-cols-2 gap-5 sm:grid-cols-4">
-              {[['22g','Protein'],['0g','Added Sugar'],['≤150','Target Calories'],['250ml','Ready to Drink']].map(([value,label]) => (
-                <div key={label}><p className="text-2xl font-black">{value}</p><p className="mt-1 text-sm text-black/45">{label}</p></div>
-              ))}
-            </div>
-            <p className="mt-5 max-w-xl text-xs leading-5 text-black/38">Targets shown are pre-launch formulation goals. Final nutrition values may change after product development and regulatory review.</p>
-          </Reveal>
-          <Reveal direction="right" delay={0.12}>
-            <HeroBottle />
-          </Reveal>
-        </div>
-      </section>
-
-      <PerformanceStrip />
-      <LaunchCountdown />
-      <Flavours />
-      <Vote />
-      <TasteLab />
-      <WhyHevon />
-      <Ingredients />
-      <Comparison />
-
-      <section id="story" className="scroll-mt-20 bg-[#fff8f2] px-5 py-20 sm:px-6 sm:py-24 lg:px-10">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
-          <Reveal direction="left"><div><p className="eyebrow">Our Story</p><h2 className="section-title mt-5">We were tired of compromise.</h2></div></Reveal>
-          <Reveal direction="right" delay={0.08}><div className="rounded-[30px] bg-white p-7 shadow-[0_22px_65px_rgba(0,0,0,.06)] sm:p-10">
-            <p className="text-lg leading-8 text-black/65">Coffee brought energy. Protein shakes brought nutrition. Everyday drinks brought convenience and taste.</p>
-            <p className="mt-5 text-lg leading-8 text-black/65">But finding all of that in one honest, enjoyable bottle was difficult. So HEVON started with a straightforward idea: build a better daily drink without pretending the product is finished before it is.</p>
-            <p className="mt-5 font-bold text-[#ff6a00]">Real development. Honest targets. No fake hype.</p>
-          </div></Reveal>
-        </div>
-      </section>
-
-      <Community />
-      <FAQ />
-      <Waitlist />
-      <Footer />
+  return <div className="hv-brand">
+    <a className="hv-skip" href="#main">Skip to content</a>
+    <div className="hv-announcement">A higher you, every day. <span>Protein coffee is coming.</span><a href="#waitlist">Be first to know ↗</a></div>
+    <header className="hv-header"><Link href="/" aria-label="HEVON home" className="hv-logo"><Image src="/logo/hevon-wordmark.svg" alt="HEVON" width={140} height={38} priority /></Link><nav className="hv-desktop-nav" aria-label="Main navigation"><a href="#coffee">Meet the coffee</a><a href="#story">Our story</a><a href="#next">What’s next</a><a href="/feedback.html">Share feedback</a></nav><a className="hv-nav-cta" href="#waitlist">Join the launch <span aria-hidden="true">↗</span></a><details className="hv-mobile-menu"><summary aria-label="Open navigation">☰</summary><nav aria-label="Mobile navigation"><a href="#coffee">Meet the coffee</a><a href="#story">Our story</a><a href="#next">What’s next</a><a href="/feedback.html">Share feedback</a><a href="#faq">Questions & answers</a></nav></details></header>
+    <main id="main">
+      <section className="hv-hero" aria-labelledby="hero-title"><div className="hv-hero-copy"><p className="hv-kicker"><span /> GOOD DAYS START HERE</p><h1 id="hero-title">Your coffee.<br />With a little<br /><em>more in it.</em></h1><p className="hv-lead">The coffee ritual you love. The protein you’re looking for. Meet HEVON’s first everyday nutrition idea.</p><div className="hv-actions"><a className="hv-button hv-button-dark" href="#waitlist">Get launch updates <span aria-hidden="true">↗</span></a><a className="hv-text-link" href="#coffee">Meet your next coffee ↓</a></div><p className="hv-hero-foot">COFFEE FIRST. NUTRITION WITH PURPOSE.</p></div><figure className="hv-hero-visual"><Image src="/hevon-campaign-2026.png" alt="HEVON iced coffee bottle concept with a glass of iced coffee in warm sunlight" width={1122} height={1402} priority sizes="(max-width: 760px) 100vw, 50vw" /><figcaption>Packaging concept · final product details at launch</figcaption><span className="hv-image-label">MEET HEVON<br /><b>More than<br />coffee.</b></span></figure></section>
+      <div className="hv-ribbon" aria-label="Our approach"><span>Coffee comes first</span><i aria-hidden="true">✳</i><span>Built for real routines</span><i aria-hidden="true">✳</i><span>Shaped by you</span><i aria-hidden="true">✳</i><span>A higher you, every day</span></div>
+      <section id="coffee" className="hv-section hv-product"><div className="hv-product-heading"><p className="hv-kicker">THE FIRST CHAPTER</p><h2>Big coffee energy.<br /><em>Everyday ambition.</em></h2></div><div className="hv-product-content"><div><span className="hv-tag">IN DEVELOPMENT</span><h3>Protein Iced Coffee</h3><p>We’re working on a rich, smooth coffee you can grab and go. A familiar daily ritual, with meaningful protein built in.</p><a className="hv-text-link" href="#waitlist">Save me a place on the launch list ↗</a></div><dl className="hv-specs"><div><dt>20–25g</dt><dd>Protein development target</dd></div><div><dt>250ml</dt><dd>Planned bottle size</dd></div><div><dt>Taste first</dt><dd>Our starting point, always</dd></div></dl></div><p className="hv-small">We’re refining the recipe. Final nutrition, ingredients and availability will be confirmed before sale.</p><details className="hv-bottle-explore"><summary>Explore the bottle concept <span aria-hidden="true">+</span></summary><HeroBottle /><p className="hv-small">Drag the bottle or use the rotation buttons. Packaging is a concept; final details will be shared at launch.</p></details></section>
+      <section id="taste-lab" className="hv-feedback"><div><p className="hv-kicker">YOUR TASTE. OUR NEXT STEP.</p><h2>Had a sip?<br />Tell us <em>everything.</em></h2><p>Loved it? Too sweet? Want something different?<br />Your honest feedback helps us make HEVON better.</p><a className="hv-button hv-button-dark" href="/feedback.html">Share my taste feedback <span aria-hidden="true">↗</span></a><span className="hv-feedback-note">About a minute. No account needed.</span></div><div className="hv-feedback-card"><span className="hv-tag">THE HEVON TASTE CHECK</span><h3>How was<br />your first sip?</h3><div className="hv-rating-preview" aria-hidden="true">★ ★ ★ ★ ★</div><p>You bring the honest opinion.<br />We’ll bring the listening.</p><div className="hv-feedback-card-bottom"><span>Taste · Sweetness · Texture</span><span aria-hidden="true">↗</span></div></div></section>
+      <section id="next" className="hv-section hv-next"><div><p className="hv-kicker">GOOD THINGS START WITH YOU</p><h2>What should<br />we stir up <em>next?</em></h2><p>Coffee is our first chapter. Help us choose the flavours worth exploring after it.</p><p className="hv-small">These are future concepts, not products available to buy.</p></div><BrandForms kind="vote" /></section>
+      <section id="story" className="hv-story"><div className="hv-story-mark" aria-hidden="true">A HIGHER<br /><span>YOU.</span><br />EVERY DAY.</div><div><p className="hv-kicker">WHY WE’RE HERE</p><h2>Better nutrition.<br />A little more <em>everyday.</em></h2><p>We believe looking after yourself should feel like part of your life. Not another complicated thing on your to-do list.</p><p>So we’re starting with something familiar: coffee. Making it work a little harder for your day, while keeping taste at the heart of it.</p><p>Our ambition goes beyond one bottle. We’re building HEVON around real routines, honest feedback and the nutrition people actually want.</p><a className="hv-text-link" href="mailto:hello@hevon.in">Say hello to HEVON ↗</a></div></section>
+      <section id="faq" className="hv-section hv-faq"><div><p className="hv-kicker">GLAD YOU ASKED</p><h2>A few things<br />to <em>know.</em></h2></div><div>{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}{question === "How can I give feedback?" && <> <a href="/feedback.html">Open the feedback form ↗</a></>}</p></details>)}</div></section>
+      <section id="waitlist" className="hv-launch"><div><p className="hv-kicker">BE PART OF THE FIRST CHAPTER</p><h2>Your next<br />coffee ritual<br /><em>starts here.</em></h2><p>Join the HEVON launch list for product news,<br />early-access information and what’s coming next.</p></div><BrandForms kind="waitlist" /></section>
     </main>
-  );
+    <footer className="hv-footer"><div className="hv-footer-top"><Link href="/" aria-label="HEVON home"><Image src="/logo/hevon-wordmark.svg" alt="HEVON" width={168} height={46} /></Link><p>A higher you. Every day.</p><a href="https://instagram.com/hevonofficial" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:hello@hevon.in">hello@hevon.in ↗</a></div><div className="hv-footer-bottom"><span>© {new Date().getFullYear()} HEVON</span><nav aria-label="Footer navigation"><a href="/feedback.html">Taste feedback</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav><span>Made for everyday ambition.</span></div></footer>
+  </div>;
 }
