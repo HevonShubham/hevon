@@ -16,7 +16,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 a { color: inherit; text-decoration: none; }
-button, input { font: inherit; }
+button, input, select, textarea { font: inherit; }
+select { color-scheme: dark; }
 ::selection { background: #ff6a00; color: white; }
 
 .eyebrow {

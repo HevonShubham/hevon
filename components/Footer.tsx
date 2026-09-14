@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Mail } from "lucide-react";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -17,7 +17,8 @@ export default function Footer() {
             <div className="space-y-3 text-white/60">
               <p className="text-xs font-black uppercase tracking-[.15em] text-white">Contact</p>
               <a href="mailto:hello@hevon.in" className="flex items-center gap-2 transition hover:text-white"><Mail size={16} />hello@hevon.in</a>
-              <a href="https://instagram.com/hevonofficial" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white"><FaInstagram size={16} />@hevonofficial</a>
+              <a href="https://www.instagram.com/hevon.official?stkn=MTNoczB6NHE2aXlqcg==" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white"><FaInstagram size={16} />@hevon.official</a>
+              <a href="https://wa.me/917905558324?text=Hi%20HEVON%2C%20I%20want%20to%20know%20more%20about%20early%20access." target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white"><FaWhatsapp size={16} />WhatsApp HEVON</a>
             </div>
             <div className="space-y-3 text-white/60">
               <p className="text-xs font-black uppercase tracking-[.15em] text-white">Legal</p>

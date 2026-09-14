@@ -43,7 +43,7 @@ const organizationJsonLd = {
   url: "https://hevon.in",
   logo: "https://hevon.in/logo/hevon-icon.svg",
   email: "hello@hevon.in",
-  sameAs: ["https://instagram.com/hevonofficial"],
+  sameAs: ["https://www.instagram.com/hevon.official"],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

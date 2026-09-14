@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const links = [
+  ["Protein Number", "#my-protein"],
   ["Flavours", "#flavours"],
   ["Why HEVON", "#why-hevon"],
   ["Vote", "#vote"],
@@ -29,12 +30,12 @@ export default function Navbar() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${scrolled ? "border-black/8 bg-[#fff8f2]/94 shadow-[0_12px_32px_rgba(0,0,0,.06)] backdrop-blur-xl" : "border-black/5 bg-[#fff8f2]/88 backdrop-blur-lg"}`}>
       <div className={`mx-auto flex max-w-7xl items-center justify-between px-5 transition-all duration-300 sm:px-6 lg:px-10 ${scrolled ? "h-[68px]" : "h-[76px]"}`}>
-        <a href="#home" aria-label="HEVON home" className="flex shrink-0 items-center gap-3">
+        <a href="#home" aria-label="HEVON home" className="flex min-w-0 shrink items-center gap-3">
           <Image src="/logo/hevon-wordmark.svg" alt="HEVON" width={146} height={36} priority className="h-auto w-[104px] sm:w-[118px]" />
-          <span className="border-l border-black/15 pl-3 text-[9px] font-black uppercase tracking-[.17em] text-[#ff6a00] sm:text-[10px]">A Higher You</span>
+          <span className="hidden border-l border-black/15 pl-3 text-[9px] font-black uppercase tracking-[.17em] text-[#ff6a00] sm:inline sm:text-[10px]">A Higher You</span>
         </a>
 
-        <nav className="hidden items-center gap-8 text-[13px] font-semibold md:flex">
+        <nav className="hidden items-center gap-6 text-[13px] font-semibold lg:flex xl:gap-8">
           {links.map(([label, href]) => (
             <a key={href} href={href} className="relative py-2 transition hover:text-[#ff6a00] after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-left after:scale-x-0 after:bg-[#ff6a00] after:transition-transform hover:after:scale-x-100">
               {label}
@@ -43,17 +44,17 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href="#waitlist" className="rounded-full bg-[#ff6a00] px-4 py-2.5 text-xs font-bold text-white shadow-[0_12px_30px_rgba(255,106,0,.24)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_36px_rgba(255,106,0,.28)] sm:px-5 sm:text-sm">
-            Get Early Access
+          <a href="#waitlist" className="rounded-full bg-[#ff6a00] px-3 py-2.5 text-[11px] font-bold text-white shadow-[0_12px_30px_rgba(255,106,0,.24)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_36px_rgba(255,106,0,.28)] sm:px-5 sm:text-sm">
+            <span className="sm:hidden">Early Access</span><span className="hidden sm:inline">Get Early Access</span>
           </a>
-          <button type="button" aria-label="Toggle navigation" aria-expanded={open} onClick={() => setOpen((value) => !value)} className="grid h-10 w-10 place-items-center rounded-full border border-black/10 md:hidden">
+          <button type="button" aria-label="Toggle navigation" aria-expanded={open} onClick={() => setOpen((value) => !value)} className="grid h-10 w-10 place-items-center rounded-full border border-black/10 lg:hidden">
             {open ? <X size={19} /> : <Menu size={19} />}
           </button>
         </div>
       </div>
 
       {open && (
-        <nav className="border-t border-black/5 bg-[#fff8f2]/98 px-5 py-5 backdrop-blur-xl md:hidden">
+        <nav className="border-t border-black/5 bg-[#fff8f2]/98 px-5 py-5 backdrop-blur-xl lg:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-1">
             {links.map(([label, href]) => (
               <a key={href} href={href} onClick={() => setOpen(false)} className="rounded-xl px-3 py-3 font-semibold hover:bg-black/5">

@@ -5,6 +5,7 @@ import { ArrowRight, CheckCircle2, LoaderCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const choices = ["Coffee taste", "Protein", "Zero added sugar", "Convenience", "Brand purpose"];
+const cities = ["Ahmedabad", "Bengaluru", "Chandigarh", "Chennai", "Delhi NCR", "Hyderabad", "Indore", "Jaipur", "Kochi", "Kolkata", "Lucknow", "Mumbai", "Nagpur", "Pune", "Surat", "Other"];
 
 export default function TasteLab() {
   const router = useRouter();
@@ -31,7 +32,7 @@ export default function TasteLab() {
         <div>
           <p className="eyebrow">HEVON Taste Lab</p>
           <h2 className="section-title mt-5 text-white">Your taste.<br /><span className="font-serif italic text-[#ff8b3d]">Built into the bottle.</span></h2>
-          <a href="/feedback.html" className="mt-6 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#ff6a00] px-6 py-3 font-bold text-white">Already tried HEVON? Share taste feedback <ArrowRight size={18} /></a>
+          <a href="/feedback.html" className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[#ff6a00] px-5 py-3 text-center text-sm font-bold text-white sm:w-auto">Already tried HEVON? Share feedback <ArrowRight size={18} /></a>
           <p className="mt-6 max-w-xl text-base leading-8 text-white/58">Tell us what matters before the formulation is locked. Your answers help shape sweetness, coffee intensity, texture and how we explain HEVON.</p>
           <div className="mt-8 space-y-3 text-sm text-white/65">
             {["Influence the final taste profile", "Help us understand protein-coffee awareness", "Get invited to future tasting sessions"].map((item) => <p key={item} className="flex items-center gap-3"><CheckCircle2 size={18} className="text-[#ff6a00]" />{item}</p>)}
@@ -45,7 +46,7 @@ export default function TasteLab() {
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="text-xs font-bold text-white/60">Name<input required name="name" className="mt-2 min-h-13 w-full rounded-2xl border border-white/12 bg-black/20 px-4 text-white outline-none focus:border-[#ff6a00]" /></label>
             <label className="text-xs font-bold text-white/60">Email<input required type="email" name="email" className="mt-2 min-h-13 w-full rounded-2xl border border-white/12 bg-black/20 px-4 text-white outline-none focus:border-[#ff6a00]" /></label>
-            <label className="text-xs font-bold text-white/60">City<input required name="city" className="mt-2 min-h-13 w-full rounded-2xl border border-white/12 bg-black/20 px-4 text-white outline-none focus:border-[#ff6a00]" /></label>
+            <label className="text-xs font-bold text-white/60">City<select required name="city" defaultValue="" className="mt-2 min-h-13 w-full rounded-2xl border border-white/12 bg-[#191919] px-4 text-white outline-none focus:border-[#ff6a00]"><option value="" disabled>Select city</option>{cities.map((city) => <option key={city}>{city}</option>)}</select></label>
             <label className="text-xs font-bold text-white/60">Coffee strength
               <select name="coffee-strength" className="mt-2 min-h-13 w-full rounded-2xl border border-white/12 bg-[#191919] px-4 text-white outline-none focus:border-[#ff6a00]">
                 <option>Mild and creamy</option><option>Balanced</option><option>Bold coffee</option>

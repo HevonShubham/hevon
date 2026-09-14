@@ -142,7 +142,7 @@ export default function Flavours() {
                   </motion.div>
                 )}
 
-                <div className="pointer-events-none absolute inset-x-8 bottom-5 z-20 flex items-center justify-between">
+                <div className="pointer-events-none absolute inset-x-6 bottom-5 z-20 flex flex-col items-start gap-2 sm:inset-x-8 sm:flex-row sm:items-center sm:justify-between">
                   <span className="text-[11px] font-black uppercase tracking-[.16em] text-white drop-shadow-md">{index === 0 ? "22g Protein" : "Community concept"}</span>
                   <span className={`rounded-full px-3 py-2 text-[10px] font-black uppercase tracking-[.12em] text-white shadow-lg ${flavour.badge}`}>
                     {flavour.name}

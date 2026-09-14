@@ -16,11 +16,15 @@ function remaining() {
 }
 
 export default function LaunchCountdown() {
-  const [time, setTime] = useState(remaining);
+  const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
+    const initialTimer = window.setTimeout(() => setTime(remaining()), 0);
     const timer = window.setInterval(() => setTime(remaining()), 1000);
-    return () => window.clearInterval(timer);
+    return () => {
+      window.clearTimeout(initialTimer);
+      window.clearInterval(timer);
+    };
   }, []);
 
   return (
@@ -29,13 +33,13 @@ export default function LaunchCountdown() {
       <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-end">
         <div>
           <div className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[.16em]">
-            <CalendarDays size={15} /> Next development update
+            <CalendarDays size={15} /> India helps shape HEVON
           </div>
-          <h2 className="mt-6 text-4xl font-black leading-none tracking-[-.055em] sm:text-6xl">Building in public.<br />October 01.</h2>
-          <p className="mt-5 max-w-lg text-sm leading-6 text-white/75">Join before the next milestone update to receive product progress, taste-test opportunities and launch access.</p>
-          <a href="#waitlist" className="mt-7 inline-flex items-center gap-2 font-black">Get founder updates <ArrowRight size={18} /></a>
+          <h2 className="mt-6 text-4xl font-black leading-none tracking-[-.055em] sm:text-6xl">Help decide<br />where we launch first.</h2>
+          <p className="mt-5 max-w-lg text-sm leading-6 text-white/75">Join the founding community before October 01. Share your city, coffee preference and purchase intent to help shape HEVON’s launch shortlist.</p>
+          <a href="#waitlist" className="mt-7 inline-flex items-center gap-2 font-black">Join the founding community <ArrowRight size={18} /></a>
         </div>
-        <div className="grid grid-cols-4 gap-2 sm:gap-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
           {Object.entries(time).map(([label, value]) => (
             <div key={label} className="rounded-[24px] border border-white/20 bg-[#111] px-2 py-6 text-center shadow-[0_22px_55px_rgba(80,20,0,.2)] sm:py-8">
               <div className="text-3xl font-black tabular-nums sm:text-5xl">{String(value).padStart(2, "0")}</div>
