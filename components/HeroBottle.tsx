@@ -6,10 +6,10 @@ import { ChevronLeft, ChevronRight, Rotate3D } from "lucide-react";
 import { useState } from "react";
 
 const views = [
-  { src: "/bottle-360-front.png", label: "Front" },
-  { src: "/bottle-360-right.png", label: "Right side" },
-  { src: "/bottle-360-back.png", label: "Back" },
-  { src: "/bottle-360-left.png", label: "Left side" },
+  { src: "/bottle-360-front.webp", label: "Front" },
+  { src: "/bottle-360-right.webp", label: "Right side" },
+  { src: "/bottle-360-back.webp", label: "Back" },
+  { src: "/bottle-360-left.webp", label: "Left side" },
 ];
 
 export default function HeroBottle({ compact = false }: { compact?: boolean }) {
@@ -24,11 +24,10 @@ export default function HeroBottle({ compact = false }: { compact?: boolean }) {
   };
 
   return (
-    <div className={`relative flex flex-col items-center justify-center ${compact ? "min-h-[420px]" : "min-h-[570px] sm:min-h-[650px]"}`}>
+    <div className={`relative flex min-w-0 flex-col items-center justify-center ${compact ? "min-h-[420px]" : "min-h-[430px] sm:min-h-[650px]"}`}>
       <div className="pointer-events-none absolute h-[70%] w-[78%] rounded-full bg-[#ff6a00]/10 blur-3xl" />
       <div className={`relative z-10 w-full overflow-hidden rounded-[34px] border border-black/8 bg-[#fff8f2] shadow-[0_28px_80px_rgba(67,34,18,.13)] ${compact ? "max-w-[350px]" : "max-w-[500px]"}`}>
         <div className="relative aspect-[2/2.55] overflow-hidden [perspective:1400px]">
-          <div aria-hidden="true" className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0">{views.map((item) => <Image key={item.src} src={item.src} alt="" width={20} height={30} />)}</div>
           <AnimatePresence initial={false} custom={direction} mode="sync">
             <motion.div
               key={views[view].src}

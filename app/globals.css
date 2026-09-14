@@ -7,9 +7,11 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; background: var(--cream); }
+html { max-width: 100%; overflow-x: clip; scroll-behavior: smooth; background: var(--cream); }
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: clip;
   background: var(--cream);
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +19,7 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
+input, select, textarea { min-width: 0; max-width: 100%; }
 select { color-scheme: dark; }
 ::selection { background: #ff6a00; color: white; }
 
@@ -90,4 +93,5 @@ input:-webkit-autofill:focus {
   .section-title { font-size: clamp(2.35rem, 13vw, 3.25rem); }
   .button-primary,
   .button-secondary { width: 100%; }
+  body::before { display: none; }
 }
