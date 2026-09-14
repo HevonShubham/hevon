@@ -57,11 +57,11 @@ export default function WhyHevon() {
             className="absolute inset-0"
           >
             <Image
-              src="/hevon-bottle-brand-guide.png"
-              alt="Official HEVON 250 ml iced coffee packaging shown from every side"
+              src="/campaign/hevon-cafe-five-view.webp"
+              alt="HEVON bottle concepts shown from every side in a realistic café studio"
               fill
               sizes="(max-width: 1024px) 100vw, 55vw"
-              className="object-contain object-center p-4 opacity-95 sm:p-6"
+              className="object-cover object-center opacity-95"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/8 to-black/10" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/10" />

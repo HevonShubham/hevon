@@ -1,4 +1,5 @@
 import Comparison from "@/components/Comparison";
+import BrandWorld from "@/components/BrandWorld";
 import Community from "@/components/Community";
 import FAQ from "@/components/FAQ";
 import Flavours from "@/components/Flavours";
@@ -26,7 +27,7 @@ export default function Home() {
           <Reveal direction="right" delay={0.12}><HeroBottle /></Reveal>
         </div>
       </section>
-      <PerformanceStrip /><ProteinCalculator /><LaunchCountdown /><Flavours /><Vote /><TasteLab /><WhyHevon /><Ingredients /><Comparison />
+      <PerformanceStrip /><ProteinCalculator /><LaunchCountdown /><Flavours /><Vote /><TasteLab /><WhyHevon /><BrandWorld /><Ingredients /><Comparison />
       <section id="story" className="scroll-mt-20 bg-[#fff8f2] px-5 py-20 sm:px-6 sm:py-24 lg:px-10"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center"><Reveal direction="left"><div><p className="eyebrow">Our Story</p><h2 className="section-title mt-5">We were tired of compromise.</h2></div></Reveal><Reveal direction="right" delay={0.08}><div className="rounded-[30px] bg-white p-7 shadow-[0_22px_65px_rgba(0,0,0,.06)] sm:p-10"><p className="text-lg leading-8 text-black/65">Coffee brought energy. Protein shakes brought nutrition. Everyday drinks brought convenience and taste.</p><p className="mt-5 text-lg leading-8 text-black/65">But finding all of that in one honest, enjoyable bottle was difficult. So HEVON started with a straightforward idea: build a better daily drink without pretending the product is finished before it is.</p><p className="mt-5 font-bold text-[#ff6a00]">Coffee first. Nutrition with purpose. Shaped by you.</p></div></Reveal></div></section>
       <Community /><FAQ /><Waitlist /><Footer />
     </main>
