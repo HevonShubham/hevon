@@ -9,10 +9,12 @@ const cities = ["Ahmedabad", "Bengaluru", "Chandigarh", "Chennai", "Delhi NCR", 
 
 export default function TasteLab() {
   const router = useRouter();
-  const [status, setStatus] = useState<"idle" | "submitting" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "submitting" | "selection-error" | "error">("idle");
+  const [drivers, setDrivers] = useState<string[]>([]);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (drivers.length === 0) { setStatus("selection-error"); return; }
     setStatus("submitting");
     const data = new FormData(event.currentTarget);
     const body = new URLSearchParams();
@@ -53,7 +55,7 @@ export default function TasteLab() {
               </select>
             </label>
           </div>
-          <fieldset className="mt-6"><legend className="text-xs font-bold text-white/60">What first made you curious about HEVON?</legend><div className="mt-3 flex flex-wrap gap-2">{choices.map((choice) => <label key={choice} className="cursor-pointer"><input type="radio" required name="awareness-driver" value={choice} className="peer sr-only" /><span className="block rounded-full border border-white/12 px-4 py-2.5 text-xs text-white/60 transition peer-checked:border-[#ff6a00] peer-checked:bg-[#ff6a00] peer-checked:text-white">{choice}</span></label>)}</div></fieldset>
+          <fieldset className="mt-6"><legend className="text-xs font-bold text-white/60">What first made you curious about HEVON? <span className="font-normal text-white/35">Select all that apply</span></legend><div className="mt-3 flex flex-wrap gap-2">{choices.map((choice) => <label key={choice} className="cursor-pointer"><input type="checkbox" name="awareness-driver" value={choice} checked={drivers.includes(choice)} onChange={(event) => { setStatus("idle"); setDrivers((current) => event.target.checked ? [...current, choice] : current.filter((item) => item !== choice)); }} className="peer sr-only" /><span className="block rounded-full border border-white/12 px-4 py-2.5 text-xs text-white/60 transition peer-checked:border-[#ff6a00] peer-checked:bg-[#ff6a00] peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#ff6a00]">{choice}</span></label>)}</div>{status === "selection-error" && <p role="alert" className="mt-3 text-xs font-bold text-[#ff9a52]">Choose at least one option.</p>}</fieldset>
           <label className="mt-6 block text-xs font-bold text-white/60">What would make HEVON worth buying?<textarea name="purchase-feedback" rows={3} className="mt-2 w-full resize-none rounded-2xl border border-white/12 bg-black/20 p-4 text-white outline-none focus:border-[#ff6a00]" /></label>
           <button disabled={status === "submitting"} className="mt-5 flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-[#ff6a00] font-black transition hover:-translate-y-0.5">{status === "submitting" ? <><LoaderCircle size={18} className="animate-spin" />Sending</> : <>Share feedback <ArrowRight size={18} /></>}</button>
           {status === "error" && <p className="mt-3 text-sm text-red-300">We could not submit this. Please retry or email hello@hevon.in.</p>}
