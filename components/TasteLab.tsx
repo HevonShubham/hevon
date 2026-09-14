@@ -20,7 +20,7 @@ export default function TasteLab() {
     const body = new URLSearchParams();
     data.forEach((value, key) => body.append(key, String(value)));
     try {
-      const response = await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body.toString() });
+      const response = await fetch("/__forms.html", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body.toString() });
       if (!response.ok) throw new Error("Feedback submission failed");
       router.push("/success?form=feedback");
     } catch {
@@ -43,6 +43,7 @@ export default function TasteLab() {
 
         <form name="hevon-feedback" onSubmit={submit} className="rounded-[32px] border border-white/10 bg-white/[.055] p-6 backdrop-blur-sm sm:p-8">
           <input type="hidden" name="form-name" value="hevon-feedback" />
+          <input type="hidden" name="subject" value="New HEVON Taste Lab response" />
           <input type="hidden" name="source" value="HEVON Website Taste Lab" />
           <input className="hidden" name="bot-field" tabIndex={-1} autoComplete="off" />
           <div className="grid gap-4 sm:grid-cols-2">

@@ -50,7 +50,7 @@ export default function Vote() {
     formData.forEach((value, key) => body.append(key, String(value)));
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: body.toString(),
@@ -97,6 +97,7 @@ export default function Vote() {
             className="rounded-[32px] border border-black/8 bg-[#fff8f2] p-5 shadow-[0_22px_65px_rgba(0,0,0,.06)] sm:p-7"
           >
             <input type="hidden" name="form-name" value="flavour-vote" />
+            <input type="hidden" name="subject" value="New HEVON flavour vote" />
             <input className="hidden" name="bot-field" tabIndex={-1} autoComplete="off" />
 
             <input
