@@ -36,7 +36,7 @@ export default function LaunchCountdown() {
             <CalendarDays size={15} /> India helps shape HEVON
           </div>
           <h2 className="mt-6 text-4xl font-black leading-none tracking-[-.055em] sm:text-6xl">Help decide<br />where we launch first.</h2>
-          <p className="mt-5 max-w-lg text-sm leading-6 text-white/75">Join the founding community before October 01. Share your city, coffee preference and purchase intent to help shape HEVON’s launch shortlist.</p>
+          <p className="mt-5 max-w-lg text-sm leading-6 text-white/75">Join the founding community before October 01. Share your city and expected flavour to help shape HEVON’s launch shortlist.</p>
           <a href="#waitlist" className="mt-7 inline-flex items-center gap-2 font-black">Join the founding community <ArrowRight size={18} /></a>
         </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
