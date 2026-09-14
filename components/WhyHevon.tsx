@@ -61,7 +61,7 @@ export default function WhyHevon() {
               alt="HEVON bottle concepts shown from every side in a realistic café studio"
               fill
               sizes="(max-width: 1024px) 100vw, 55vw"
-              className="object-cover object-center opacity-95"
+              className="object-contain object-center opacity-95 sm:object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/8 to-black/10" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/10" />

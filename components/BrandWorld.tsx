@@ -13,6 +13,7 @@ const scenes = [
     copy: "A bilingual packaging direction designed to feel clear, confident and at home in everyday Indian life.",
     alt: "HEVON English and Hindi packaging concepts in a warm Indian café",
     detailAlt: "Detailed English and Hindi HEVON bottle packaging concepts",
+    position: "object-[72%_center] sm:object-center",
   },
   {
     src: "/campaign/hevon-cafe-five-view.webp",
@@ -22,6 +23,7 @@ const scenes = [
     copy: "Front, back and side-panel concepts bring product information, brand purpose and daily utility into one coherent system.",
     alt: "Five HEVON bottle views arranged in a realistic café studio",
     detailAlt: "Detailed front, side and back HEVON bottle packaging concepts",
+    position: "object-center",
   },
 ];
 
@@ -49,7 +51,7 @@ export default function BrandWorld() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.75, delay: index * 0.08 }}
-              className="group relative min-h-[560px] overflow-hidden rounded-[34px] border border-black/10 bg-[#1a120e] shadow-[0_28px_90px_rgba(47,24,10,.16)] sm:min-h-[620px] lg:min-h-[680px]"
+              className="group relative min-h-[680px] overflow-hidden rounded-[34px] border border-black/10 bg-[#1a120e] shadow-[0_28px_90px_rgba(47,24,10,.16)] sm:min-h-[620px] lg:min-h-[680px]"
             >
               <motion.div
                 className="absolute inset-0"
@@ -58,7 +60,7 @@ export default function BrandWorld() {
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 12, ease: "easeOut" }}
               >
-                <Image src={scene.src} alt={scene.alt} fill priority={index === 0} sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover object-center" />
+                <Image src={scene.src} alt={scene.alt} fill priority={index === 0} sizes="(max-width: 1280px) 100vw, 1280px" className={`object-cover ${scene.position}`} />
               </motion.div>
 
               <div className="absolute inset-0 bg-gradient-to-r from-black/82 via-black/38 to-black/5" />
