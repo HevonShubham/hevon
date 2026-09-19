@@ -5,14 +5,9 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const links = [
-  ["Protein Number", "#my-protein"],
-  ["Flavours", "#flavours"],
+  ["Flavours & Vote", "#flavours"],
   ["Why HEVON", "#why-hevon"],
-  ["Vote", "#vote"],
-  ["Taste Lab", "#taste-lab"],
   ["Ingredients", "#ingredients"],
-  ["Compare", "#comparison"],
-  ["Story", "#story"],
   ["FAQ", "#faq"],
 ];
 
