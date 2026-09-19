@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "HEVON",
+    "slug": "hevon",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8F2"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "in.hevon.app"
+    },
+    "android": {
+      "package": "in.hevon.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFF8F2"
+      }
+    }
+  }
+}
