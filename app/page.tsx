@@ -3,6 +3,7 @@ import Flavours from "@/components/Flavours";
 import Footer from "@/components/Footer";
 import Ingredients from "@/components/Ingredients";
 import HeroBottle from "@/components/HeroBottle";
+import LaunchCountdown from "@/components/LaunchCountdown";
 import Navbar from "@/components/Navbar";
 import Reveal from "@/components/Reveal";
 import Waitlist from "@/components/Waitlist";
@@ -19,7 +20,7 @@ export default function Home() {
           <Reveal direction="right" delay={0.12}><HeroBottle /></Reveal>
         </div>
       </section>
-      <Flavours /><WhyHevon /><Ingredients />
+      <LaunchCountdown /><Flavours /><WhyHevon /><Ingredients />
       <FAQ /><Waitlist /><Footer />
     </main>
   );

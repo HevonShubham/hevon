@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const links = [
+  ["Founding Circle", "#founding-circle"],
   ["Flavours & Vote", "#flavours"],
   ["Why HEVON", "#why-hevon"],
   ["Ingredients", "#ingredients"],
