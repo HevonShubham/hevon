@@ -5,10 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hevon.in"),
   title: {
-    default: "HEVON — Protein Coffee",
+    default: "HEVON PROFFEE — Protein Coffee",
     template: "%s | HEVON",
   },
-  description: "Meet HEVON: everyday nutrition, starting with protein iced coffee. Follow the launch, share your taste feedback and help shape what comes next.",
+  description: "Meet HEVON PROFFEE: Protein Coffee targeting 20 gm protein and zero added sugar. Fuel Your Day.",
   keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee", "zero added sugar"],
   applicationName: "HEVON",
   authors: [{ name: "HEVON" }],
@@ -21,17 +21,17 @@ export const metadata: Metadata = {
     apple: "/logo/hevon-icon.svg",
   },
   openGraph: {
-    title: "HEVON — Protein Coffee",
-    description: "Your coffee, with a little more in it. Meet HEVON protein iced coffee, join the launch list and help shape what comes next.",
+    title: "HEVON PROFFEE — Protein Coffee",
+    description: "Protein Coffee targeting 20 gm protein and zero added sugar. Fuel Your Day.",
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
-    images: [{ url: "/social/og-hevon.png", width: 1200, height: 630, alt: "HEVON Protein Coffee — A Higher You Every Day" }],
+    images: [{ url: "/social/og-hevon.png", width: 1200, height: 630, alt: "HEVON PROFFEE Protein Coffee — Fuel Your Day" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HEVON — Protein Coffee",
-    description: "Your coffee, with a little more in it. Meet HEVON protein iced coffee, join the launch list and help shape what comes next.",
+    title: "HEVON PROFFEE — Protein Coffee",
+    description: "Protein Coffee targeting 20 gm protein and zero added sugar. Fuel Your Day.",
     images: ["/social/og-hevon.png"],
   },
 };

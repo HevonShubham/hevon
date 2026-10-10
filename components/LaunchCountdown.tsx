@@ -22,7 +22,7 @@ const steps = [
 ];
 
 export default function LaunchCountdown() {
-  const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [time, setTime] = useState(remaining);
 
   useEffect(() => {
     const update = () => setTime(remaining());
@@ -40,7 +40,7 @@ export default function LaunchCountdown() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[.06] px-4 py-2 text-[10px] font-black uppercase tracking-[.18em] text-[#ff9a55]"><CalendarDays size={15} /> Founding Circle · 2026</div>
             <h2 id="founding-circle-title" className="mt-6 text-4xl font-black leading-[.95] tracking-[-.055em] sm:text-6xl">Help shape what<br /><span className="font-serif italic font-medium text-[#ff8b3d]">comes next.</span></h2>
-            <p className="mt-6 max-w-xl text-base leading-8 text-white/62">Join by 31 December 2026 to share your city and flavour preference for HEVON’s next product-development checkpoint.</p>
+            <p className="mt-6 max-w-xl text-base leading-8 text-white/62">Join by 31 December 2026, 11:59 pm IST, to share your city and flavour preference for HEVON’s next product-development checkpoint.</p>
             <a href="#waitlist" className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#ff6a00] px-5 text-sm font-black transition hover:-translate-y-0.5">Join the Founding Circle <ArrowRight size={17} /></a>
           </div>
           <div>
@@ -48,7 +48,7 @@ export default function LaunchCountdown() {
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               {Object.entries(time).map(([label, value]) => (
                 <div key={label} className="rounded-[24px] border border-white/10 bg-white/[.055] px-2 py-6 text-center shadow-[0_22px_55px_rgba(0,0,0,.24)] backdrop-blur sm:py-8">
-                  <div className="text-3xl font-black tabular-nums sm:text-5xl">{String(value).padStart(2, "0")}</div>
+                  <div suppressHydrationWarning className="text-3xl font-black tabular-nums sm:text-5xl">{String(value).padStart(2, "0")}</div>
                   <div className="mt-2 text-[9px] font-black uppercase tracking-[.15em] text-white/40 sm:text-[10px]">{label}</div>
                 </div>
               ))}

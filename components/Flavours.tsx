@@ -28,7 +28,7 @@ export default function Flavours() {
         <div className="mt-10 grid gap-5 lg:grid-cols-[.85fr_1.15fr]">
           <div className="flex min-h-[350px] items-center gap-4 overflow-hidden rounded-[28px] border border-[#e7cdbb] bg-[#f4e5d8] p-5 sm:gap-8 sm:p-8">
             <div className="relative h-[290px] w-[130px] shrink-0 sm:h-[330px] sm:w-[170px]">
-              <Image src="/hevon-bottle-brand-front-clean.png" alt="HEVON Protein Coffee bottle front" fill sizes="(max-width: 640px) 130px, 170px" className="object-contain drop-shadow-xl" />
+              <Image src="/hevon-bottle-cutout.png" alt="HEVON PROFFEE Protein Coffee bottle front" fill sizes="(max-width: 640px) 130px, 170px" className="object-contain drop-shadow-xl" />
             </div>
             <div>
               <span className="text-xs font-black uppercase tracking-[.15em] text-[#9b4e22]">Planned first</span>

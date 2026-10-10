@@ -15,7 +15,7 @@ export default function PrivacyPage() {
           <p>You can withdraw research invitation consent or request removal of your submitted personal details by emailing hello@hevon.in. If you contact us about an anonymous submission, include enough information to identify it.</p>
           <p>We do not sell your personal information. Form submissions are processed through the hosting provider used for hevon.in and may be stored in its form-submission dashboard.</p>
           <p>You may request removal from the waitlist by emailing <a className="font-bold text-[#111]" href="mailto:hello@hevon.in">hello@hevon.in</a>.</p>
-          <p>This policy may be updated as the website and business develop. Last updated: September 2026.</p>
+          <p>This policy may be updated as the website and business develop. Last updated: October 2026.</p>
         </div>
       </article>
     </main>

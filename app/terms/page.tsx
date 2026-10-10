@@ -12,7 +12,7 @@ export default function TermsPage() {
           <p>This website presents HEVON as a pre-launch brand. Product designs, flavours, nutrition values, availability dates and other details may change during development.</p>
           <p>Nothing on this website is medical, nutritional or investment advice. Final product claims will be based on completed formulation, testing and applicable regulatory approval.</p>
           <p>All HEVON names, graphics and original website content are owned by or used for the HEVON project and may not be reproduced for commercial use without permission.</p>
-          <p>Questions may be sent to <a className="font-bold text-[#111]" href="mailto:hello@hevon.in">hello@hevon.in</a>. Last updated: July 2026.</p>
+          <p>Questions may be sent to <a className="font-bold text-[#111]" href="mailto:hello@hevon.in">hello@hevon.in</a>. Last updated: October 2026.</p>
         </div>
       </article>
     </main>
