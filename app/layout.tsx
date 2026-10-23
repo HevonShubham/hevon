@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     default: "HEVON PROFFEE — Protein Coffee",
     template: "%s | HEVON",
   },
-  description: "Meet HEVON PROFFEE: Protein Coffee targeting 20 gm protein and zero added sugar. Fuel Your Day.",
-  keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee", "zero added sugar"],
+  description: "Meet HEVON PROFFEE: Protein Coffee in development, targeting approximately 21 g protein per 250 ml. Fuel Your Day.",
+  keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee"],
   applicationName: "HEVON",
   authors: [{ name: "HEVON" }],
   creator: "HEVON",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "HEVON PROFFEE — Protein Coffee",
-    description: "Protein Coffee targeting 20 gm protein and zero added sugar. Fuel Your Day.",
+    description: "Protein Coffee in development, targeting approximately 21 g protein per 250 ml. Fuel Your Day.",
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "HEVON PROFFEE — Protein Coffee",
-    description: "Protein Coffee targeting 20 gm protein and zero added sugar. Fuel Your Day.",
+    description: "Protein Coffee in development, targeting approximately 21 g protein per 250 ml. Fuel Your Day.",
     images: ["/social/og-hevon.png"],
   },
 };

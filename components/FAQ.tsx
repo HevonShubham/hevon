@@ -5,8 +5,11 @@ import { Plus } from "lucide-react";
 import { useState } from "react";
 
 const items = [
-  ["What is HEVON?", "HEVON is the brand behind Protein Coffee—a ready-to-drink coffee targeting 20 gm protein and being developed for launch in India."],
-  ["How much protein will it contain?", "Each 250 ml bottle is designed to target 20 gm protein. Final values will be confirmed after product development, stability testing and regulatory review."],
+  ["What is HEVON?", "HEVON is the brand behind Protein Coffee—a ready-to-drink coffee targeting approximately 21 g protein per 250 ml and being developed for launch in India."],
+  ["How much protein will it contain?", "Current soy and pea prototypes target approximately 21 g protein per 250 ml. Final values will be confirmed after product development, stability testing and regulatory review."],
+  ["What is the latest development progress?", "As of 23 October 2026, soy and pea protein isolate prototypes have been developed and retort trials are underway. Sensory evaluation is planned next, followed by further refinement. A whey protein concentrate version is also planned for evaluation."],
+  ["Is the protein source final?", "No. Soy and pea prototypes are being evaluated, and a whey version is planned. Final ingredients and allergen information will be published once the formulation is selected and validated."],
+  ["When will HEVON launch?", "A retail launch date has not been confirmed. We will announce availability after product testing, production and regulatory readiness. The Founding Circle deadline is a community deadline, not a product launch date."],
   ["Will every flavour contain caffeine?", "No. Caffeine is intended only for coffee-based flavours. Future non-coffee concepts would remain protein drinks without added caffeine."],
   ["Is HEVON available to buy now?", "Not yet. HEVON is in the pre-launch product-development stage. Joining the waitlist is the best way to receive verified launch updates."],
   ["Are the future flavours confirmed?", "No. Protein Coffee is the planned launch product. Other flavours shown are concept directions and may change based on formulation feasibility and community feedback."],

@@ -34,7 +34,7 @@ export default function Flavours() {
               <span className="text-xs font-black uppercase tracking-[.15em] text-[#9b4e22]">Planned first</span>
               <h3 className="mt-3 text-2xl font-black tracking-tight sm:text-3xl">Protein Coffee</h3>
               <p className="mt-3 max-w-xs text-sm leading-6 text-black/60">Real coffee character in a convenient protein drink.</p>
-              <p className="mt-4 text-xs leading-5 text-black/45">Bottle artwork shows the current design direction. Final label details are subject to product validation.</p>
+              <p className="mt-4 text-xs leading-5 text-black/45">Concept artwork may show earlier nutrition targets. Current prototypes target approximately 21 g per 250 ml; final ingredients and label details are pending validation.</p>
             </div>
           </div>
 

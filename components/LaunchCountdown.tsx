@@ -16,7 +16,7 @@ function remaining() {
 }
 
 const steps = [
-  ["Now", "Community input", "City, flavour and routine signals"],
+  ["Now", "Prototype trials", "Soy and pea bases developed; retort trials underway"],
   ["Next", "Prototype refinement", "Taste, texture and packaging validation"],
   ["Then", "Launch readiness", "Manufacturing, compliance and distribution"],
 ];

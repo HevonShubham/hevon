@@ -5,22 +5,22 @@ const principles = [
   {
     icon: Coffee,
     title: "Real coffee experience",
-    copy: "Protein Coffee is being developed around real Arabica coffee character—not a generic coffee-flavoured shake.",
+    copy: "Protein Coffee is being developed around a coffee-first drinking experience, with taste and texture evaluated alongside protein content.",
   },
   {
     icon: FlaskConical,
     title: "Protein that fits the drink",
-    copy: "The formulation target is 20 gm protein while protecting texture, stability and everyday drinkability.",
+    copy: "Soy and pea protein isolate prototypes target approximately 21 g protein per 250 ml. A whey protein concentrate version is planned for comparison.",
   },
   {
     icon: WheatOff,
-    title: "Zero added sugar",
-    copy: "Sweetness and flavour will be balanced without adding sugar to the formulation target.",
+    title: "Sweetness under review",
+    copy: "No added sugar remains a development goal. Final sweetness, ingredients and nutrition will be confirmed after formulation and testing.",
   },
   {
     icon: Droplets,
     title: "Built for shelf-life",
-    copy: "Packaging, processing and ingredient decisions will be validated with manufacturing and regulatory partners.",
+    copy: "Retort trials are underway. A six-month shelf life is a development target only; any declared shelf life will require stability validation.",
   },
 ];
 
