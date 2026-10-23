@@ -5,15 +5,11 @@ import { Plus } from "lucide-react";
 import { useState } from "react";
 
 const items = [
-  ["What is HEVON?", "HEVON is the brand behind Protein Coffee—a ready-to-drink coffee targeting approximately 21 g protein per 250 ml and being developed for launch in India."],
-  ["How much protein will it contain?", "Current soy and pea prototypes target approximately 21 g protein per 250 ml. Final values will be confirmed after product development, stability testing and regulatory review."],
-  ["What is the latest development progress?", "As of 23 October 2026, soy and pea protein isolate prototypes have been developed and retort trials are underway. Sensory evaluation is planned next, followed by further refinement. A whey protein concentrate version is also planned for evaluation."],
-  ["Is the protein source final?", "No. Soy and pea prototypes are being evaluated, and a whey version is planned. Final ingredients and allergen information will be published once the formulation is selected and validated."],
-  ["When will HEVON launch?", "A retail launch date has not been confirmed. We will announce availability after product testing, production and regulatory readiness. The Founding Circle deadline is a community deadline, not a product launch date."],
-  ["Will every flavour contain caffeine?", "No. Caffeine is intended only for coffee-based flavours. Future non-coffee concepts would remain protein drinks without added caffeine."],
-  ["Is HEVON available to buy now?", "Not yet. HEVON is in the pre-launch product-development stage. Joining the waitlist is the best way to receive verified launch updates."],
-  ["Are the future flavours confirmed?", "No. Protein Coffee is the planned launch product. Other flavours shown are concept directions and may change based on formulation feasibility and community feedback."],
-  ["Where will HEVON launch?", "The initial focus is India, with channel and city decisions to be finalised after manufacturing, regulatory and distribution planning."],
+  ["What is HEVON?", "Your coffee ritual, with a little more to give. HEVON is crafting ready-to-drink protein coffee for busy mornings, afternoon pauses and everything in between."],
+  ["When can I take my first sip?", "Your next coffee ritual is taking shape. We’re fine-tuning the taste and texture before your first sip. Join early access to hear when tasting opportunities and launch plans are ready."],
+  ["How much protein is in the plan?", "We’re working towards approximately 21 g of protein in a 250 ml bottle. Final nutrition and ingredients will be shared before launch."],
+  ["Which flavour comes first?", "Coffee leads the way. The other flavours are ideas you can help shape—vote for the one you’d love to sip next."],
+  ["Where will HEVON be available?", "We’re preparing for India. Tell us your city when you join early access to help shape where our first sips happen."],
 ];
 
 export default function FAQ() {
@@ -24,7 +20,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-4xl">
         <div className="text-center">
           <p className="eyebrow">FAQ</p>
-          <h2 className="section-title mt-5">A few useful answers.</h2>
+          <h2 className="section-title mt-5">Before your first sip.</h2>
         </div>
 
         <div className="mt-10 space-y-3">

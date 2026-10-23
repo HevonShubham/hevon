@@ -5,22 +5,22 @@ const principles = [
   {
     icon: Coffee,
     title: "Real coffee experience",
-    copy: "Protein Coffee is being developed around a coffee-first drinking experience, with taste and texture evaluated alongside protein content.",
+    copy: "That first-sip feeling is our inspiration. We’re crafting coffee character you’ll want to come back to.",
   },
   {
     icon: FlaskConical,
     title: "Protein that fits the drink",
-    copy: "Soy and pea protein isolate prototypes target approximately 21 g protein per 250 ml. A whey protein concentrate version is planned for comparison.",
+    copy: "Aiming for approximately 21 g per bottle, with coffee enjoyment at the heart of every decision.",
   },
   {
     icon: WheatOff,
-    title: "Sweetness under review",
-    copy: "No added sugar remains a development goal. Final sweetness, ingredients and nutrition will be confirmed after formulation and testing.",
+    title: "Finding the sweet spot",
+    copy: "We’re fine-tuning sweetness and balance so the coffee gets its moment.",
   },
   {
     icon: Droplets,
-    title: "Built for shelf-life",
-    copy: "Retort trials are underway. A six-month shelf life is a development target only; any declared shelf life will require stability validation.",
+    title: "Made for your day",
+    copy: "Morning plans. Afternoon pauses. A convenient bottle designed to fit the rhythm of your day.",
   },
 ];
 
@@ -31,11 +31,11 @@ export default function Ingredients() {
         <Reveal>
           <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="eyebrow">Formulation Philosophy</p>
-              <h2 className="section-title mt-5">Built carefully.<br />Explained honestly.</h2>
+              <p className="eyebrow">The HEVON Way</p>
+              <h2 className="section-title mt-5">Coffee worth<br />looking forward to.</h2>
             </div>
             <p className="max-w-2xl text-base leading-8 text-black/58 lg:justify-self-end">
-              HEVON is still in product development. These are the principles guiding the work—not final label claims. Final ingredients and nutrition will only be published after formulation, testing and regulatory review.
+              We’re taking our time with your next coffee ritual—bringing taste, texture and useful nutrition together. Final product details will be shared before launch.
             </p>
           </div>
         </Reveal>

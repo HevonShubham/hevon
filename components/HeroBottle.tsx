@@ -24,7 +24,7 @@ export default function HeroBottle({ compact = false }: { compact?: boolean }) {
             className="h-auto w-full select-none object-contain"
           />
           <span className="absolute right-4 top-4 rounded-full border border-black/8 bg-white/88 px-3 py-2 text-[9px] font-black uppercase tracking-[.16em] text-black/55 backdrop-blur">Packaging concept</span>
-          <p className="relative bg-white px-5 py-3 text-xs leading-5 text-black/60">Concept artwork may show earlier nutrition targets. Current prototypes target approximately 21 g protein per 250 ml; final label details are pending validation.</p>
+          <p className="relative bg-white px-5 py-3 text-xs leading-5 text-black/60">Packaging concept. Final design and nutrition may change.</p>
         </div>
       </motion.div>
     </div>

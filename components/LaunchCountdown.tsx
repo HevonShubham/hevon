@@ -16,9 +16,9 @@ function remaining() {
 }
 
 const steps = [
-  ["Now", "Prototype trials", "Soy and pea bases developed; retort trials underway"],
-  ["Next", "Prototype refinement", "Taste, texture and packaging validation"],
-  ["Then", "Launch readiness", "Manufacturing, compliance and distribution"],
+  ["Now", "Crafting your coffee", "Fine-tuning the flavour and first-sip feeling"],
+  ["Next", "Your taste matters", "Early tasting opportunities as the product takes shape"],
+  ["Then", "Meet your new ritual", "Launch details shared when we’re ready"],
 ];
 
 export default function LaunchCountdown() {
