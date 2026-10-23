@@ -5,11 +5,11 @@ import { Plus } from "lucide-react";
 import { useState } from "react";
 
 const items = [
-  ["What is HEVON?", "Your coffee ritual, with a little more to give. HEVON is crafting ready-to-drink protein coffee for busy mornings, afternoon pauses and everything in between."],
-  ["When can I take my first sip?", "Your next coffee ritual is taking shape. We’re fine-tuning the taste and texture before your first sip. Join early access to hear when tasting opportunities and launch plans are ready."],
-  ["How much protein is in the plan?", "We’re working towards approximately 21 g of protein in a 250 ml bottle. Final nutrition and ingredients will be shared before launch."],
-  ["Which flavour comes first?", "Coffee leads the way. The other flavours are ideas you can help shape—vote for the one you’d love to sip next."],
-  ["Where will HEVON be available?", "We’re preparing for India. Tell us your city when you join early access to help shape where our first sips happen."],
+  ["What is HEVON?", "A little more for your everyday. HEVON is developing a ready-to-drink protein coffee in a convenient 250 ml bottle."],
+  ["When can I take my first sip?", "The first release is still taking shape, and a launch date hasn’t been confirmed. Join early access for tasting opportunities and the launch reveal."],
+  ["What’s inside?", "Our target is approximately 21 g protein per 250 ml. We’re refining taste and texture; final ingredients and nutrition will be revealed before launch."],
+  ["Which flavour comes first?", "Protein Coffee is our first planned release. What follows? You can help decide—vote for the flavour you’d like us to explore next."],
+  ["Where will HEVON be available?", "We’re preparing for India. Tell us your city when you join early access to help shape our first launch locations."],
 ];
 
 export default function FAQ() {
@@ -20,7 +20,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-4xl">
         <div className="text-center">
           <p className="eyebrow">FAQ</p>
-          <h2 className="section-title mt-5">Before your first sip.</h2>
+          <h2 className="section-title mt-5">A little more to know.</h2>
         </div>
 
         <div className="mt-10 space-y-3">

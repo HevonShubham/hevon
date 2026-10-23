@@ -4,23 +4,23 @@ import Reveal from "@/components/Reveal";
 const principles = [
   {
     icon: Coffee,
-    title: "Real coffee experience",
-    copy: "That first-sip feeling is our inspiration. We’re crafting coffee character you’ll want to come back to.",
+    title: "Taste worth the wait",
+    copy: "We’re refining flavour and texture together. The first sip has to earn the next.",
   },
   {
     icon: FlaskConical,
     title: "Protein that fits the drink",
-    copy: "Aiming for approximately 21 g per bottle, with coffee enjoyment at the heart of every decision.",
+    copy: "Approximately 21 g per 250 ml is the target. Final nutrition will be confirmed before launch.",
   },
   {
     icon: WheatOff,
     title: "Finding the sweet spot",
-    copy: "We’re fine-tuning sweetness and balance so the coffee gets its moment.",
+    copy: "Every detail has a part to play. We’re working on a balanced taste you’ll want to return to.",
   },
   {
     icon: Droplets,
     title: "Made for your day",
-    copy: "Morning plans. Afternoon pauses. A convenient bottle designed to fit the rhythm of your day.",
+    copy: "One ready-to-drink bottle. Designed for busy mornings, breaks and the plans in between.",
   },
 ];
 
@@ -32,10 +32,10 @@ export default function Ingredients() {
           <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr] lg:items-end">
             <div>
               <p className="eyebrow">The HEVON Way</p>
-              <h2 className="section-title mt-5">Coffee worth<br />looking forward to.</h2>
+              <h2 className="section-title mt-5">More than a reveal.<br />Something to look forward to.</h2>
             </div>
             <p className="max-w-2xl text-base leading-8 text-black/58 lg:justify-self-end">
-              We’re taking our time with your next coffee ritual—bringing taste, texture and useful nutrition together. Final product details will be shared before launch.
+              There’s more to HEVON than the first look. We’re bringing taste, protein and convenience together—and sharing the details as they’re ready.
             </p>
           </div>
         </Reveal>

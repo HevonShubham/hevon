@@ -34,7 +34,7 @@ export default function Flavours() {
               <span className="text-xs font-black uppercase tracking-[.15em] text-[#9b4e22]">Planned first</span>
               <h3 className="mt-3 text-2xl font-black tracking-tight sm:text-3xl">Protein Coffee</h3>
               <p className="mt-3 max-w-xs text-sm leading-6 text-black/60">Real coffee character in a convenient protein drink.</p>
-              <p className="mt-4 text-xs leading-5 text-black/45">A first look at your future coffee ritual. Packaging and nutrition are still being finalised.</p>
+              <p className="mt-4 text-xs leading-5 text-black/45">A glimpse of what’s taking shape. Packaging and nutrition are still being finalised.</p>
             </div>
           </div>
 

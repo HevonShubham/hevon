@@ -16,9 +16,9 @@ function remaining() {
 }
 
 const steps = [
-  ["Now", "Crafting your coffee", "Fine-tuning the flavour and first-sip feeling"],
+  ["Now", "Taking shape", "Taste, texture and the details that matter"],
   ["Next", "Your taste matters", "Early tasting opportunities as the product takes shape"],
-  ["Then", "Meet your new ritual", "Launch details shared when we’re ready"],
+  ["Then", "The first release", "Launch details shared when we’re ready"],
 ];
 
 export default function LaunchCountdown() {
