@@ -21,7 +21,8 @@ export default function Footer() {
               <a href="https://wa.me/917905558324?text=Hi%20HEVON%2C%20I%20want%20to%20know%20more%20about%20early%20access." target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white"><FaWhatsapp size={16} />WhatsApp HEVON</a>
             </div>
             <div className="space-y-3 text-white/60">
-              <p className="text-xs font-black uppercase tracking-[.15em] text-white">Legal</p>
+              <p className="text-xs font-black uppercase tracking-[.15em] text-white">Useful links</p>
+              <Link href="/app" className="block transition hover:text-white">Get the HEVON app</Link>
               <Link href="/privacy" className="block transition hover:text-white">Privacy</Link>
               <Link href="/terms" className="block transition hover:text-white">Terms</Link>
             </div>

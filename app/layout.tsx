@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description: "HEVON. A little more, every day. Discover PROFFEE, explore the first drop and join the waitlist.",
   keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee"],
   applicationName: "HEVON",
+  appleWebApp: { capable: true, title: "HEVON", statusBarStyle: "default" },
   authors: [{ name: "HEVON" }],
   creator: "HEVON",
   publisher: "HEVON",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/logo/hevon-icon.svg",
     shortcut: "/logo/hevon-icon.svg",
-    apple: "/logo/hevon-icon.svg",
+    apple: "/icons/hevon-180.png",
   },
   openGraph: {
     title: "HEVON PROFFEE — Protein Coffee",

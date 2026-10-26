@@ -1,14 +1,4 @@
-import type { MetadataRoute } from "next";
-
+import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
-  return {
-    name: "HEVON PROFFEE",
-    short_name: "HEVON",
-    description: "HEVON Protein Coffee. Fuel Your Day.",
-    start_url: "/",
-    display: "standalone",
-    background_color: "#fff8f2",
-    theme_color: "#ff6a00",
-    icons: [{ src: "/logo/hevon-icon.svg", sizes: "any", type: "image/svg+xml" }],
-  };
+  return {id:'/app',name:'HEVON',short_name:'HEVON',description:'A little more. Every day. Discover the first drop and save your cart.',start_url:'/app',scope:'/',display:'standalone',background_color:'#f6f3ec',theme_color:'#263226',lang:'en-IN',icons:[{src:'/icons/hevon-192.png',sizes:'192x192',type:'image/png',purpose:'any'},{src:'/icons/hevon-512.png',sizes:'512x512',type:'image/png',purpose:'any'}],shortcuts:[{name:'Discover the first drop',url:'/app#shop'},{name:'Join the waitlist',url:'/app#waitlist'}]};
 }
