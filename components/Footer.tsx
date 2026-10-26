@@ -23,6 +23,8 @@ export default function Footer() {
             <div className="space-y-3 text-white/60">
               <p className="text-xs font-black uppercase tracking-[.15em] text-white">Useful links</p>
               <Link href="/app" className="block transition hover:text-white">Get the HEVON app</Link>
+              <a href="#discover" className="block transition hover:text-white">Calculator & activities</a>
+              <a href="/feedback.html" className="block transition hover:text-white">Share taste feedback</a>
               <Link href="/privacy" className="block transition hover:text-white">Privacy</Link>
               <Link href="/terms" className="block transition hover:text-white">Terms</Link>
             </div>
