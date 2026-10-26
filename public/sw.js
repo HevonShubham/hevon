@@ -1,4 +1,4 @@
-const CACHE = 'hevon-public-v1';
+const CACHE = 'hevon-public-v2';
 const SHELL = ['/offline.html','/icons/hevon-192.png','/icons/hevon-512.png'];
 self.addEventListener('install', event => {event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event => {event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('hevon-public-') && key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
