@@ -22,7 +22,6 @@ export default function Footer() {
             </div>
             <div className="space-y-3 text-white/60">
               <p className="text-xs font-black uppercase tracking-[.15em] text-white">Legal</p>
-              <a href="/feedback.html" className="block transition hover:text-white">Share taste feedback</a>
               <Link href="/privacy" className="block transition hover:text-white">Privacy</Link>
               <Link href="/terms" className="block transition hover:text-white">Terms</Link>
             </div>
@@ -31,7 +30,6 @@ export default function Footer() {
 
         <div className="mt-9 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/35 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} HEVON. All rights reserved.</p>
-          <p>Nutrition figures shown are pre-launch targets, not final product claims.</p>
         </div>
       </div>
     </footer>
