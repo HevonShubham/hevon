@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "HEVON PROFFEE — Protein Coffee",
     template: "%s | HEVON",
   },
-  description: "Meet HEVON PROFFEE: Protein Coffee in development, targeting approximately 21 g protein per 250 ml. Fuel Your Day.",
+  description: "HEVON. A little more, every day. Discover PROFFEE, explore the first drop and join the waitlist.",
   keywords: ["HEVON", "protein drink India", "ready to drink protein", "protein coffee"],
   applicationName: "HEVON",
   authors: [{ name: "HEVON" }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "HEVON PROFFEE — Protein Coffee",
-    description: "Protein Coffee in development, targeting approximately 21 g protein per 250 ml. Fuel Your Day.",
+    description: "A little more, every day. Discover HEVON PROFFEE and join the waitlist for the first drop.",
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "HEVON PROFFEE — Protein Coffee",
-    description: "Protein Coffee in development, targeting approximately 21 g protein per 250 ml. Fuel Your Day.",
+    description: "A little more, every day. Discover HEVON PROFFEE and join the waitlist for the first drop.",
     images: ["/social/og-hevon.png"],
   },
 };

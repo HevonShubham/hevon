@@ -10,6 +10,7 @@ export default function TermsPage() {
         <h1 className="mt-8 text-5xl font-black tracking-[-.05em]">Terms</h1>
         <div className="mt-8 space-y-6 text-base leading-8 text-black/60">
           <p>This website presents HEVON as a pre-launch brand. Product designs, flavours, nutrition values, availability dates and other details may change during development.</p>
+          <p>The launch cart saves an expression of interest on your browser. It is not a pre-order, purchase, stock reservation or price guarantee. Checkout is closed while HEVON is unavailable. Final pricing, delivery availability and purchase policies will be provided before orders open.</p>
           <p>Nothing on this website is medical, nutritional or investment advice. Final product claims will be based on completed formulation, testing and applicable regulatory approval.</p>
           <p>All HEVON names, graphics and original website content are owned by or used for the HEVON project and may not be reproduced for commercial use without permission.</p>
           <p>Questions may be sent to <a className="font-bold text-[#111]" href="mailto:hello@hevon.in">hello@hevon.in</a>. Last updated: October 2026.</p>
