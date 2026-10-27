@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     url: "https://hevon.in",
     siteName: "HEVON",
     type: "website",
-    images: [{ url: "/social/og-hevon.png", width: 1200, height: 630, alt: "HEVON PROFFEE Protein Coffee — Fuel Your Day" }],
+    images: [{ url: "/hevon-proffee-concept-v3.webp", width: 1440, height: 1085, alt: "HEVON PROFFEE Protein Coffee — Fuel Your Day" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "HEVON PROFFEE — Protein Coffee",
     description: "A little more, every day. Discover HEVON PROFFEE and join the waitlist for the first drop.",
-    images: ["/social/og-hevon.png"],
+    images: ["/hevon-proffee-concept-v3.webp"],
   },
 };
 
