@@ -10,7 +10,7 @@ export default function DiwaliGreeting() {
             May every day ahead shine brighter.
           </h2>
           <p className="mt-6 max-w-xl text-base leading-8 text-white/72 sm:text-lg">
-            This Diwali, we celebrate new beginnings, thoughtful choices and the energy to keep moving forward. From the food innovators at HEVON, wishing you and your loved ones health, happiness and brighter days.
+            This Diwali, we celebrate new beginnings, thoughtful choices and the energy to keep moving forward. HEVON wishes you and your loved ones health, happiness and brighter days.
           </p>
           <p className="mt-8 font-black tracking-[.16em] text-[#ff8a24]">HAPPY DIWALI</p>
         </div>
